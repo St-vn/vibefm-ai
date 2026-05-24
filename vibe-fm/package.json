@@ -4,8 +4,8 @@
   "main": "expo-router/entry",
   "dependencies": {
     "@expo/vector-icons": "^14.0.0",
-    "@siteed/expo-audio-studio": "^3.0.2",
     "expo": "~54.0.0",
+    "expo-av": "^16.0.8",
     "expo-constants": "~17.0.0",
     "expo-document-picker": "~13.0.0",
     "expo-file-system": "~17.0.0",
