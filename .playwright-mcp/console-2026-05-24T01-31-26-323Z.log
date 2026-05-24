@@ -1,0 +1,14 @@
+[  739799ms] [WARNING] Blocked aria-hidden on an element because its descendant retained focus. The focus must not be hidden from assistive technology users. Avoid using aria-hidden on a focused element or its ancestor. Consider using the inert attribute instead, which will also prevent focus. For more details, see the aria-hidden section of the WAI-ARIA specification at https://w3c.github.io/aria/#aria-hidden.
+Element with focus: <div.css-g5y9jx r-1loqt21 r-1otgn73 r-nhxg1g r-cpet4d r-rs99b7 r-1v1z2uz r-1mmae3n r-cxgwc0>
+Ancestor with aria-hidden: <div.css-g5y9jx r-13awgt0> @ http://localhost:8088/matchmaking:0
+[  752989ms] Error: Minified React error #310; visit https://react.dev/errors/310 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at bo (http://localhost:8088/_expo/static/js/web/entry-4618b8b9dad1d62048449592e81d316c.js:271:54995)
+    at Object.Ko [as useRef] (http://localhost:8088/_expo/static/js/web/entry-4618b8b9dad1d62048449592e81d316c.js:271:61410)
+    at e.useRef (http://localhost:8088/_expo/static/js/web/entry-4618b8b9dad1d62048449592e81d316c.js:43:7183)
+    at e.useAnimatedStyle (http://localhost:8088/_expo/static/js/web/entry-4618b8b9dad1d62048449592e81d316c.js:1429:151)
+    at j (http://localhost:8088/_expo/static/js/web/entry-4618b8b9dad1d62048449592e81d316c.js:1562:2676)
+    at co (http://localhost:8088/_expo/static/js/web/entry-4618b8b9dad1d62048449592e81d316c.js:271:53709)
+    at ri (http://localhost:8088/_expo/static/js/web/entry-4618b8b9dad1d62048449592e81d316c.js:271:76687)
+    at ki (http://localhost:8088/_expo/static/js/web/entry-4618b8b9dad1d62048449592e81d316c.js:271:86948)
+    at Pc (http://localhost:8088/_expo/static/js/web/entry-4618b8b9dad1d62048449592e81d316c.js:271:122027)
+    at xc (http://localhost:8088/_expo/static/js/web/entry-4618b8b9dad1d62048449592e81d316c.js:271:121079)

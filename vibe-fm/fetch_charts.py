@@ -143,8 +143,13 @@ def get_gemini_analysis(features, title, artist, sonic_profiles):
     }
 
 
-def get_album_art(title, artist):
-    """iTunes Search API — public, no key. Returns a 300x300 art URL or a placeholder."""
+def get_itunes_metadata(title, artist):
+    """iTunes Search API — public, no key. Returns art, appleMusicUrl, and generated spotify link."""
+    metadata = {
+        "art": f"https://picsum.photos/seed/{re.sub(r'[^a-z0-9]', '', f'{artist}{title}'.lower())[:20] or 'track'}/300/300",
+        "appleMusicUrl": f"https://music.apple.com/search?term={requests.utils.quote(f'{artist} {title}')}",
+        "spotifyUrl": f"https://open.spotify.com/search/{requests.utils.quote(f'{artist} {title}')}"
+    }
     try:
         r = requests.get(
             "https://itunes.apple.com/search",
@@ -153,12 +158,15 @@ def get_album_art(title, artist):
         )
         if r.status_code == 200:
             results = r.json().get("results", [])
-            if results and results[0].get("artworkUrl100"):
-                return results[0]["artworkUrl100"].replace("100x100", "300x300")
+            if results:
+                res = results[0]
+                if res.get("artworkUrl100"):
+                    metadata["art"] = res["artworkUrl100"].replace("100x100", "300x300")
+                if res.get("trackViewUrl"):
+                    metadata["appleMusicUrl"] = res["trackViewUrl"]
     except Exception as e:
-        print(f"[!] iTunes art failed for {title}: {e}")
-    seed = re.sub(r"[^a-z0-9]", "", f"{artist}{title}".lower())[:20] or "track"
-    return f"https://picsum.photos/seed/{seed}/300/300"
+        print(f"[!] iTunes metadata failed for {title}: {e}")
+    return metadata
 
 
 def build_track(row, sonic_profiles):
@@ -166,13 +174,13 @@ def build_track(row, sonic_profiles):
     title, artist = row["title"], row["artist"]
     f = get_features(title, artist)
     g = get_gemini_analysis(f, title, artist, sonic_profiles)
-    art = get_album_art(title, artist)
+    m = get_itunes_metadata(title, artist)
     return {
         "id": f"chart-{row['location'].lower()}-{row['rank']:02d}",
         "title": title,
         "artist": artist,
         "album": f"{title} (Single)",
-        "albumArt": art,
+        "albumArt": m["art"],
         "tempo": f.get("bpm", 120),
         "energy": f.get("energy", 0.7),
         "valence": f.get("valence", 0.5),
@@ -182,12 +190,14 @@ def build_track(row, sonic_profiles):
         "speechiness": f.get("speechiness", 0.1),
         "key": f.get("key", 0),
         "mode": 1,
-        "microGenre": f.get("genre", "Pop"),
-        "moodLabel": f.get("mood", "Uplifting"),
+        "microGenre": f.get("genre") or "Pop",
+        "moodLabel": f.get("mood") or "Uplifting",
         "qualitativeDescription": g["qualitativeDescription"],
         "sonicProfile": g["sonicProfile"],
         "location": row["location"],
         "scannedAt": "",
+        "appleMusicUrl": m["appleMusicUrl"],
+        "spotifyUrl": m["spotifyUrl"],
     }
 
 

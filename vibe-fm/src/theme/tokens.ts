@@ -18,7 +18,7 @@ export const spacing = {
 
 export const fonts = {
   display: 'System',
-  mono: 'Courier New',
+  mono: 'System',
   body: 'System',
 } as const;
 

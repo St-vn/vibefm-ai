@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>vibe.fm — Advanced Layout Preview</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --void: #020202;
+    --surface: #0A0A0C;
+    --fg: #F4F4F7;
+    --fg-muted: #888891;
+    --fg-dim: #3F3F46;
+    --accent-purple: #9D5CFF;
+    --accent-cyan: #00E5FF;
+    --accent-green: #00F59B;
+    --accent-amber: #EAB308;
+    --glass-border: rgba(255, 255, 255, 0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background-color: #000; color: var(--fg); font-family: 'Space Grotesk', sans-serif; -webkit-font-smoothing: antialiased; }
+  .mono { font-family: 'JetBrains Mono', monospace; font-variant-numeric: tabular-nums; }
+  .label { font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--fg-dim); }
+
+  .app-shell {
+    width: 390px;
+    height: 844px;
+    background: var(--void);
+    margin: 40px auto;
+    border: 8px solid #1a1a1a;
+    border-radius: 48px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 40px 100px rgba(0,0,0,0.8);
+    display: flex; flex-direction: column;
+  }
+
+  .content-area { flex: 1; position: relative; overflow-y: auto; overflow-x: hidden; }
+  .nav-bar { height: 84px; background: rgba(10, 10, 12, 0.8); backdrop-filter: blur(20px); border-top: 1px solid var(--glass-border); display: grid; grid-template-columns: repeat(4, 1fr); padding-bottom: 20px; }
+  .nav-item { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 4px; color: var(--fg-dim); }
+  .nav-item.active { color: var(--accent-cyan); }
+  .nav-label { font-size: 9px; font-weight: 600; text-transform: uppercase; }
+
+  /* ─── TRENDING WITH MODAL ─── */
+  .trending-list { padding: 24px; }
+  .trending-row { padding: 16px 0; border-top: 1px solid var(--glass-border); display: flex; align-items: center; gap: 12px; }
+  .rank { font-size: 14px; font-weight: 700; color: var(--fg-dim); width: 20px; }
+  .art-placeholder { width: 44px; height: 44px; background: #222; border-radius: 4px; }
+  .track-info { flex: 1; }
+  .track-info h3 { font-size: 14px; font-weight: 600; }
+  .track-info p { font-size: 11px; color: var(--fg-muted); }
+
+  /* The Analysis Modal (Pop-up Window) */
+  .modal-overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.8); backdrop-filter: blur(8px); display: flex; align-items: center; justify-content: center; z-index: 200; }
+  .analysis-modal { width: 340px; background: var(--surface); border: 1px solid var(--glass-border); border-radius: 24px; padding: 24px; box-shadow: 0 30px 60px rgba(0,0,0,0.5); }
+  .modal-close { position: absolute; top: 12px; right: 12px; size: 24px; color: var(--fg-dim); }
+
+  /* ─── MATCHMAKING (STATS.FM STYLE) ─── */
+  .deck-area { flex: 1; display: flex; align-items: center; justify-content: center; padding: 20px; }
+  .soulmate-card {
+    width: 100%; height: 500px;
+    background: var(--surface); border: 1px solid var(--glass-border); border-radius: 24px;
+    padding: 24px; display: flex; flex-direction: column; position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+  }
+  .soulmate-badge { position: absolute; top: 20px; right: 20px; background: var(--accent-purple); color: #fff; font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 12px; }
+  .profile-header { display: flex; gap: 16px; align-items: center; margin-bottom: 24px; }
+  .avatar { width: 60px; height: 60px; border-radius: 50%; background: linear-gradient(45deg, var(--accent-purple), var(--accent-cyan)); }
+  .profile-name h2 { font-size: 20px; font-weight: 700; }
+  .profile-name p { font-size: 12px; color: var(--fg-muted); }
+
+  .compatibility-score { text-align: center; margin: 20px 0; }
+  .score-val { font-size: 72px; font-weight: 700; color: var(--accent-cyan); letter-spacing: -0.05em; line-height: 1; }
+  .score-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.15em; color: var(--fg-dim); }
+
+  .stats-section { margin-top: auto; }
+  .stats-row { display: flex; flex-direction: column; gap: 4px; margin-bottom: 12px; }
+  .stats-row .label { color: var(--fg-muted); font-size: 9px; }
+  .tag-cloud { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 4px; }
+  .tag { padding: 4px 8px; font-size: 10px; font-weight: 600; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); border-radius: 4px; }
+  .tag.shared { border-color: var(--accent-cyan); color: var(--accent-cyan); }
+
+  .swipe-hints { position: absolute; bottom: 40px; width: 100%; display: flex; justify-content: space-around; opacity: 0.3; }
+</style>
+</head>
+<body>
+
+<div style="display: flex; gap: 40px; justify-content: center; padding: 40px; flex-wrap: wrap;">
+
+  <!-- TRENDING WITH POP-UP MODAL -->
+  <div class="app-shell">
+    <div class="content-area">
+      <div class="trending-list">
+        <span class="label">Global Trending</span>
+        <div class="trending-row">
+          <span class="rank mono">01</span>
+          <div class="art-placeholder"></div>
+          <div class="track-info"><h3>Starboy</h3><p>The Weeknd</p></div>
+        </div>
+        <div class="trending-row" style="opacity: 0.5;">
+          <span class="rank mono">02</span>
+          <div class="art-placeholder"></div>
+          <div class="track-info"><h3>Breathe</h3><p>CamelPhat</p></div>
+        </div>
+      </div>
+
+      <!-- MODAL OVERLAY -->
+      <div class="modal-overlay">
+        <div class="analysis-modal">
+          <div class="hero-row" style="display: flex; gap: 16px; margin-bottom: 24px;">
+            <div class="art-placeholder" style="width: 60px; height: 60px;"></div>
+            <div class="track-info">
+              <h3 style="font-size: 18px;">Starboy</h3>
+              <p>The Weeknd</p>
+            </div>
+          </div>
+          <div class="tag-cloud" style="margin-bottom: 20px;">
+             <span class="tag shared" style="background: var(--accent-cyan); color: #000;">Dancy</span>
+             <span class="tag">Electronic</span>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+             <div class="stats-row">
+               <div style="display: flex; justify-content: space-between; font-size: 10px;" class="mono"><span>Energy</span><span>0.82</span></div>
+               <div style="height: 2px; background: rgba(255,255,255,0.05);"><div style="width: 82%; height: 100%; background: var(--accent-cyan);"></div></div>
+             </div>
+             <div class="stats-row">
+               <div style="display: flex; justify-content: space-between; font-size: 10px;" class="mono"><span>Instrumental</span><span>0.14</span></div>
+               <div style="height: 2px; background: rgba(255,255,255,0.05);"><div style="width: 14%; height: 100%; background: var(--accent-purple);"></div></div>
+             </div>
+          </div>
+          <p style="font-size: 12px; color: var(--fg-muted); margin-top: 24px; line-height: 1.6;">Aggressive electronic textures with high-pressure low-end and melodic synth leads.</p>
+        </div>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <div class="nav-item"><span class="nav-label">Capture</span></div>
+      <div class="nav-item active"><span class="nav-label">Trending</span></div>
+      <div class="nav-item"><span class="nav-label">Match</span></div>
+      <div class="nav-item"><span class="nav-label">History</span></div>
+    </div>
+  </div>
+
+  <!-- MATCHMAKING (STATS.FM STYLE) -->
+  <div class="app-shell">
+    <div class="content-area">
+      <div class="deck-area">
+        <div class="soulmate-card">
+          <div class="soulmate-badge">SOULMATE</div>
+          <div class="profile-header">
+            <div class="avatar"></div>
+            <div class="profile-name">
+              <h2>Julian S.</h2>
+              <p class="mono">Montreal, QC</p>
+            </div>
+          </div>
+
+          <div class="compatibility-score">
+            <div class="score-val">94%</div>
+            <div class="score-label">Compatibility</div>
+          </div>
+
+          <div class="stats-section">
+            <!-- SHARED ARTISTS -->
+            <div class="stats-row" style="margin-bottom: 16px;">
+              <span class="label">Shared Artists</span>
+              <div style="display: flex; gap: 8px; margin-top: 8px; align-items: center;">
+                 <div style="width: 32px; height: 32px; border-radius: 50%; background: #333; border: 1px solid var(--accent-cyan);"></div>
+                 <div style="width: 32px; height: 32px; border-radius: 50%; background: #222;"></div>
+                 <span style="font-size: 11px; font-weight: 600;">The Weeknd, Daft Punk</span>
+              </div>
+            </div>
+
+            <div class="stats-row">
+              <span class="label">Shared Aesthetic</span>
+              <div class="tag-cloud">
+                <span class="tag shared">Deep Bass</span>
+                <span class="tag shared">Melodic</span>
+                <span class="tag">Cinematic</span>
+              </div>
+            </div>
+            <div class="stats-row">
+              <span class="label">Matched Archetype</span>
+              <p style="font-size: 12px; color: var(--fg); font-weight: 600;">Industrial Grime</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="swipe-hints">
+        <div class="mono" style="color: var(--accent-amber);">SKIP</div>
+        <div class="mono" style="color: var(--accent-green);">MATCH</div>
+      </div>
+    </div>
+    <div class="nav-bar">
+      <div class="nav-item"><span class="nav-label">Capture</span></div>
+      <div class="nav-item"><span class="nav-label">Trending</span></div>
+      <div class="nav-item active"><span class="nav-label">Match</span></div>
+      <div class="nav-item"><span class="nav-label">History</span></div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

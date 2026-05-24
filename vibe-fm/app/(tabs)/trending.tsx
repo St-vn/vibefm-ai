@@ -15,15 +15,15 @@ export default function Trending() {
     const global = data.filter((t) => t.location !== 'Montreal');
     const byProperty = [...data].sort((a, b) => b.energy - a.energy).slice(0, 8);
     return [
-      { title: 'LOCAL · MONTREAL', data: local },
-      { title: 'GLOBAL', data: global },
-      { title: 'BY SONIC PROPERTY · ENERGY', data: byProperty },
+      { title: 'Local · Montreal', data: local },
+      { title: 'Global', data: global },
+      { title: 'Sonic Property · Energy', data: byProperty },
     ];
   }, [data]);
 
   return (
     <View style={styles.c}>
-      <Text style={styles.gps}>◍ MONTREAL</Text>
+      <Text style={styles.gps}>◍ Montreal</Text>
       <SectionList
         sections={sections}
         keyExtractor={(item, i) => item.id + i}
@@ -39,7 +39,7 @@ export default function Trending() {
 }
 const styles = StyleSheet.create({
   c: { flex: 1, backgroundColor: colors.background, paddingTop: 60 },
-  gps: { color: colors.green, fontSize: 11, letterSpacing: 2, paddingHorizontal: spacing.md, marginBottom: spacing.sm },
-  header: { color: colors.textSecondary, fontSize: 11, letterSpacing: 2, fontWeight: '700',
+  gps: { color: colors.green, fontSize: 11, letterSpacing: 0.5, paddingHorizontal: spacing.md, marginBottom: spacing.sm },
+  header: { color: colors.textSecondary, fontSize: 11, letterSpacing: 0.5, fontWeight: '700',
     paddingHorizontal: spacing.md, paddingTop: spacing.lg, paddingBottom: spacing.sm },
 });

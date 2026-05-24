@@ -48,11 +48,11 @@ export default function Matchmaking() {
   if (scanCount < 3) {
     return (
       <View style={styles.gate}>
-        <Text style={styles.gateTitle}>BUILD YOUR PROFILE</Text>
+        <Text style={styles.gateTitle}>Build your profile</Text>
         <Text style={styles.gateSub}>Scan at least 3 tracks to find your sonic soulmates.</Text>
         <Text style={styles.gateCount}>{scanCount} / 3</Text>
         <Pressable style={styles.btn} onPress={() => router.push('/(tabs)')}>
-          <Text style={styles.btnTxt}>GO SCAN</Text>
+          <Text style={styles.btnTxt}>Go Scan</Text>
         </Pressable>
       </View>
     );
@@ -61,7 +61,7 @@ export default function Matchmaking() {
   const current = ranked[index % ranked.length];
 
   function commit() {
-    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => {});
+    Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium).catch(() => { });
     setIndex((i) => i + 1);
     tx.value = 0;
   }
@@ -98,7 +98,7 @@ export default function Matchmaking() {
         </Animated.View>
       </GestureDetector>
 
-      <Text style={styles.hint}>SWIPE RIGHT TO MATCH · LEFT TO SKIP</Text>
+      <Text style={styles.hint}>Swipe right to match · left to skip</Text>
 
       {selectedTrack && <ResultSheet track={selectedTrack} onClose={() => setSelectedTrack(null)} />}
     </View>
@@ -106,14 +106,14 @@ export default function Matchmaking() {
 }
 const styles = StyleSheet.create({
   c: { flex: 1, backgroundColor: colors.background, alignItems: 'center', justifyContent: 'center' },
-  cardWrap: { width: '100%', alignItems: 'center', justifyContent: 'center', flex: 1 },
-  hint: { color: colors.textSecondary, fontSize: 11, letterSpacing: 1, marginBottom: spacing.xl },
+  cardWrap: { width: '95%', alignItems: 'center', justifyContent: 'center', flex: 1 },
+  hint: { color: colors.textSecondary, fontSize: 11, letterSpacing: 0.5, marginBottom: spacing.xl },
   gate: { flex: 1, backgroundColor: colors.background, alignItems: 'center', justifyContent: 'center', padding: spacing.xl },
-  gateTitle: { color: colors.textPrimary, fontSize: 16, letterSpacing: 2, fontWeight: '700' },
+  gateTitle: { color: colors.textPrimary, fontSize: 16, letterSpacing: 0.5, fontWeight: '700' },
   gateSub: { color: colors.textSecondary, fontSize: 13, textAlign: 'center', marginTop: spacing.sm },
   gateCount: { color: colors.cyan, fontSize: 32, fontWeight: '700', marginTop: spacing.lg },
   btn: { marginTop: spacing.xl, borderColor: colors.cyan, borderWidth: 1, borderRadius: 999, paddingHorizontal: 24, paddingVertical: 12 },
-  btnTxt: { color: colors.cyan, letterSpacing: 2, fontWeight: '700' },
+  btnTxt: { color: colors.cyan, letterSpacing: 0.5, fontWeight: '700' },
   matchBg: { backgroundColor: 'rgba(34,197,94,0.85)', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' },
   skipBg: { backgroundColor: 'rgba(239,68,68,0.85)', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' },
 });

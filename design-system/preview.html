@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>vibe.fm — design system</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #020203;
+    --fg: #F0F0F5;
+    --fg-muted: #6B7280;
+    --fg-dim: #3F3F46;
+    --accent-p: #7C3AED;
+    --accent-s: #06B6D4;
+    --accent-g: #22C55E;
+    --divider: rgba(255,255,255,0.06);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { background: var(--bg); }
+  body {
+    font-family: 'Space Grotesk', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+
+  .page {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 64px;
+  }
+
+  /* ─── HERO ─── */
+  .hero {
+    padding: 120px 0 80px;
+  }
+  .hero-title {
+    font-size: clamp(64px, 8vw, 104px);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 0.9;
+  }
+  .hero-title .accent { color: var(--accent-p); }
+  .hero-meta {
+    display: flex;
+    gap: 24px;
+    margin-top: 16px;
+  }
+  .hero-meta span {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    color: var(--fg-muted);
+    text-transform: uppercase;
+  }
+  .hero-desc {
+    margin-top: 40px;
+    max-width: 520px;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--fg-muted);
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+  }
+
+  /* ─── DIVIDER ─── */
+  .divider {
+    width: 100%;
+    height: 1px;
+    background: var(--divider);
+    margin: 0;
+  }
+
+  /* ─── SECTION ─── */
+  .section {
+    padding: 72px 0;
+    border-bottom: 1px solid var(--divider);
+  }
+  .section:last-of-type { border-bottom: none; }
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--fg-dim);
+    margin-bottom: 24px;
+  }
+
+  /* ─── IDENTITY ─── */
+  .identity-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+  }
+  .identity-block p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--fg-muted);
+    line-height: 1.8;
+    letter-spacing: 0.01em;
+  }
+  .identity-block .accent { color: var(--accent-s); }
+
+  /* ─── COLOR BANDS ─── */
+  .color-bands { display: flex; flex-direction: column; gap: 4px; }
+  .color-band {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 56px;
+    padding: 0 24px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+  .color-band .desc {
+    font-weight: 300;
+    margin-left: 12px;
+    opacity: 0.5;
+    display: none;
+  }
+  .color-band .label {
+    background: rgba(0,0,0,0.35);
+    padding: 2px 8px;
+    border-radius: 2px;
+    font-size: 10px;
+    color: #fff;
+  }
+
+  /* ─── TYPOGRAPHY DEMO ─── */
+  .type-demo { margin: 0; }
+  .type-demo .display-line {
+    font-size: clamp(40px, 5vw, 72px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+    color: var(--fg);
+  }
+  .type-demo .data-line {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--fg-muted);
+    margin-top: 20px;
+    letter-spacing: -0.01em;
+  }
+  .type-demo .data-line .val { color: var(--accent-p); }
+  .type-demo .data-line .val-s { color: var(--accent-s); }
+  .type-demo .caps-line {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--fg-dim);
+    margin-top: 24px;
+  }
+  .type-demo .font-label {
+    display: inline-block;
+    margin-top: 16px;
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--fg-dim);
+    letter-spacing: 0.04em;
+  }
+
+  /* ─── DATA GRID ─── */
+  .data-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+  }
+  .data-cell {
+    padding: 20px 0;
+    border-top: 1px solid var(--divider);
+  }
+  .data-key {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--fg-dim);
+  }
+  .data-val {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 4px;
+    letter-spacing: -0.02em;
+  }
+
+  /* ─── ANTI-PATTERNS ─── */
+  .anti-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 48px;
+  }
+  .anti-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--divider);
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--fg-muted);
+    letter-spacing: 0.01em;
+  }
+  .anti-item .x {
+    color: #666;
+    font-weight: 300;
+    font-size: 14px;
+    width: 14px;
+    flex-shrink: 0;
+  }
+  .anti-item .fix {
+    margin-left: auto;
+    font-size: 10px;
+    color: var(--fg-dim);
+    font-weight: 400;
+    flex-shrink: 0;
+  }
+
+  /* ─── CHIP DEMO ─── */
+  .chip-row { display: flex; gap: 6px; flex-wrap: wrap; }
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    height: 22px;
+    padding: 0 10px;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    border-radius: 2px;
+  }
+  .chip-p { background: rgba(124,58,237,0.08); color: var(--accent-p); border: 1px solid rgba(124,58,237,0.15); }
+  .chip-s { background: rgba(6,182,212,0.08); color: var(--accent-s); border: 1px solid rgba(6,182,212,0.15); }
+  .chip-g { background: rgba(34,197,94,0.08); color: var(--accent-g); border: 1px solid rgba(34,197,94,0.15); }
+  .chip-amber { border: 1px solid rgba(234,179,8,0.2); color: #EAB308; }
+  .chip-outline { border: 1px solid var(--divider); color: var(--fg-muted); }
+
+  /* ─── MINI BARS ─── */
+  .mini-bars { display: flex; flex-direction: column; gap: 6px; max-width: 480px; }
+  .mini-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .mini-label {
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--fg-dim);
+    width: 80px;
+    flex-shrink: 0;
+  }
+  .mini-track {
+    flex: 1;
+    height: 4px;
+    background: rgba(255,255,255,0.04);
+  }
+  .mini-fill {
+    height: 100%;
+    width: 0%;
+  }
+
+  /* ─── FOOTER ─── */
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0 64px;
+    font-size: 10px;
+    font-weight: 400;
+    color: var(--fg-dim);
+    letter-spacing: 0.02em;
+  }
+
+  /* ─── RESPONSIVE ─── */
+  @media (max-width: 768px) {
+    .page { padding: 0 24px; }
+    .hero { padding: 80px 0 48px; }
+    .section { padding: 48px 0; }
+    .identity-block { grid-template-columns: 1fr; gap: 32px; }
+    .data-grid { grid-template-columns: repeat(2, 1fr); }
+    .anti-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-title">vibe.<span class="accent">fm</span></div>
+    <div class="hero-meta">
+      <span>design system v1.0</span>
+      <span>hack the mountain 2026</span>
+    </div>
+    <div class="hero-desc">
+      A tool for measuring, visualizing, and connecting through the physics of sound.&nbsp;&nbsp;Not a music player. Not a social app with dark mode. A precision instrument for sonic intelligence.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- IDENTITY -->
+  <div class="section">
+    <div class="section-label">Identity</div>
+    <div class="identity-block">
+      <p>
+        <span class="accent">Modern Dark Cinema + Precision Lab Instrument.</span>
+        &nbsp;The foundation is deep void black with glassmorphism and ambient light blooms — immersive, cinematic. The overlay is scientific data visualization: tabular floats, monospace measurements, region-of-interest highlighting. Not cyberpunk (too gimmicky). Not vaporwave (too retro).
+      </p>
+      <p>
+        Three accent domains with strict mapping: <span style="color:var(--accent-p)">purple for neural/brain</span>, <span style="color:var(--accent-s)">cyan for audio/signal</span>, <span style="color:var(--accent-g)">green for pulse/haptic only</span>. Never cross the streams. Every measurement reads like an fMRI readout, not a streaming player.
+      </p>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- COLOR SYSTEM -->
+  <div class="section">
+    <div class="section-label">Color</div>
+    <div class="color-bands">
+      <div class="color-band" style="background:var(--accent-p);color:#fff"><span class="label">—accent-primary</span><span class="desc">#7C3AED · neural</span></div>
+      <div class="color-band" style="background:var(--accent-s);color:#020203"><span class="label">—accent-sonic</span><span class="desc">#06B6D4 · audio</span></div>
+      <div class="color-band" style="background:var(--accent-g);color:#020203"><span class="label">—accent-pulse</span><span class="desc">#22C55E · bpm</span></div>
+      <div class="color-band" style="background:var(--bg);color:var(--fg);border:1px solid rgba(255,255,255,0.06)"><span class="label">—bg-void</span><span class="desc">#020203</span></div>
+      <div class="color-band" style="background:#0A0A10;color:var(--fg);border:1px solid rgba(255,255,255,0.04)"><span class="label">—bg-surface</span><span class="desc">#0A0A10</span></div>
+      <div class="color-band" style="background:var(--fg);color:#020203"><span class="label">—fg</span><span class="desc">#F0F0F5</span></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- TYPOGRAPHY -->
+  <div class="section">
+    <div class="section-label">Typography</div>
+    <div class="type-demo">
+      <div class="display-line">94% sonic match</div>
+      <div class="data-line">energy <span class="val">0.87</span>&nbsp;&nbsp;·&nbsp;&nbsp;valence <span class="val-s">0.62</span>&nbsp;&nbsp;·&nbsp;&nbsp;danceability <span class="val">0.74</span>&nbsp;&nbsp;·&nbsp;&nbsp;bpm <span class="val-s">128</span></div>
+      <div class="data-line" style="font-size:13px;color:var(--fg-dim)">acousticness <span style="color:var(--fg-muted)">0.12</span>&nbsp;&nbsp;·&nbsp;&nbsp;instrumentalness <span style="color:var(--fg-muted)">0.03</span></div>
+      <div class="caps-line">sonic formula · section header · data label</div>
+      <div class="font-label">Space Grotesk 700 / JetBrains Mono 400-600</div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- DATA MEASUREMENTS -->
+  <div class="section">
+    <div class="section-label">Measurement</div>
+    <div class="data-grid">
+      <div class="data-cell">
+        <div class="data-key">energy</div>
+        <div class="data-val" style="color:var(--accent-s)">0.87</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-key">valence</div>
+        <div class="data-val" style="color:var(--accent-p)">0.62</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-key">bpm</div>
+        <div class="data-val" style="color:var(--accent-g)">128</div>
+      </div>
+      <div class="data-cell">
+        <div class="data-key">similarity</div>
+        <div class="data-val">94%</div>
+      </div>
+    </div>
+    <div style="margin-top:24px">
+      <div class="mini-bars">
+        <div class="mini-row"><span class="mini-label">energy</span><div class="mini-track"><div class="mini-fill" style="width:87%;background:var(--accent-s)"></div></div></div>
+        <div class="mini-row"><span class="mini-label">valence</span><div class="mini-track"><div class="mini-fill" style="width:62%;background:var(--accent-p)"></div></div></div>
+        <div class="mini-row"><span class="mini-label">danceability</span><div class="mini-track"><div class="mini-fill" style="width:74%;background:var(--accent-s)"></div></div></div>
+        <div class="mini-row"><span class="mini-label">acousticness</span><div class="mini-track"><div class="mini-fill" style="width:12%;background:var(--accent-p)"></div></div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- CHIPS + UI -->
+  <div class="section">
+    <div class="section-label">Components</div>
+    <div class="chip-row">
+      <span class="chip chip-s">high energy</span>
+      <span class="chip chip-p">instrumental</span>
+      <span class="chip chip-g">danceable</span>
+      <span class="chip chip-outline">speechiness</span>
+      <span class="chip chip-amber">diverges: valence</span>
+      <span class="chip chip-s" style="font-size:9px;height:18px">micro-genre</span>
+    </div>
+    <div style="margin-top:32px;font-size:13px;color:var(--fg-muted);line-height:1.8">
+      Aligned dimensions in <span style="color:var(--accent-s)">cyan</span>. Divergent in <span style="color:#EAB308">amber</span>. Chips are 2px radius — precision corners, not rounded pills.
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- ANTI-PATTERNS -->
+  <div class="section">
+    <div class="section-label">Excluded</div>
+    <div class="anti-grid">
+      <div class="anti-item"><span class="x">✕</span> emojis as icons <span class="fix">→ lucide</span></div>
+      <div class="anti-item"><span class="x">✕</span> white backgrounds <span class="fix">→ void / surface</span></div>
+      <div class="anti-item"><span class="x">✕</span> generic gradients <span class="fix">→ 3-domain accents</span></div>
+      <div class="anti-item"><span class="x">✕</span> flat progress bars <span class="fix">→ svg brain roi</span></div>
+      <div class="anti-item"><span class="x">✕</span> radar / donut charts <span class="fix">→ horizontal bars</span></div>
+      <div class="anti-item"><span class="x">✕</span> Righteous font <span class="fix">→ Space Grotesk</span></div>
+      <div class="anti-item"><span class="x">✕</span> raw floats in UI <span class="fix">→ "94% match"</span></div>
+      <div class="anti-item"><span class="x">✕</span> skeleton loading <span class="fix">→ staggered spring</span></div>
+    </div>
+  </div>
+
+  <div class="divider"></div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <span>vibe.fm · design system v1.0</span>
+    <span>hack the mountain 2026 · arts + cadum mobile</span>
+  </div>
+
+</div>
+</body>
+</html>

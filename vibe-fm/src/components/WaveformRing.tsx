@@ -7,6 +7,7 @@ export function WaveformRing({ active, amplitude = 0 }: { active: boolean; ampli
   return (
     <View style={styles.wrap}>
       <MotiView
+        key={active ? 'active' : 'idle'}
         from={{ scale: 1, opacity: 0.6 }}
         animate={active ? { scale: 1 + amplitude * 0.4, opacity: 0.9 } : { scale: 1.08, opacity: 0.6 }}
         transition={active

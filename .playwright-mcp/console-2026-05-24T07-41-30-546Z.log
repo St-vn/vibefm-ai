@@ -1,0 +1,7 @@
+[   21322ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ http://localhost:8081/node_modules/expo-router/entry.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:70545
+[   21483ms] [LOG] Running application "main" with appParams:
+ {rootTag: #root, hydrate: undefined} 
+Development-level warnings: ON.
+Performance optimizations: OFF. @ http://localhost:8081/node_modules/expo-router/entry.bundle?platform=web&dev=true&hot=false&lazy=true&transform.engine=hermes&transform.routerRoot=app&unstable_transformProfile=hermes-stable:70545
+[   50504ms] [ERROR] Access to image at 'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F81%2F8a%2F1b%2F818a1b89a57c2ee0fb7619b95e11aebd.jpg&f=1&nofb=1&ipt=128fdde9dc857f823db76d46472bc094f791f6bab75af41f2a39a5c6c110ced6' from origin 'http://localhost:8081' has been blocked by CORS policy: No 'Access-Control-Allow-Origin' header is present on the requested resource. @ http://localhost:8081/matchmaking:0
+[   50507ms] [ERROR] Failed to load resource: net::ERR_FAILED @ https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F81%2F8a%2F1b%2F818a1b89a57c2ee0fb7619b95e11aebd.jpg&f=1&nofb=1&ipt=128fdde9dc857f823db76d46472bc094f791f6bab75af41f2a39a5c6c110ced6:0

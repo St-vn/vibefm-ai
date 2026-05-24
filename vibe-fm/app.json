@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "vibe-fm",
+    "slug": "vibe-fm",
+    "version": "1.0.0",
+    "scheme": "vibefm",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "vibe.fm uses the microphone to identify songs playing around you.",
+        "NSLocationWhenInUseUsageDescription": "vibe.fm uses your location to show locally trending tracks.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "ai.vibefm.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "634077a0-fb80-46c8-ba0a-070dc0e4fb5e"
+      }
+    }
+  }
+}

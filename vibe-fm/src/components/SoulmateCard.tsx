@@ -6,7 +6,7 @@ import { Tag } from './Tag';
 import { UserVector, Track } from '../types';
 import { findTrackByTitle } from '../lib/trackLookup';
 
-const DIMS = ['TEMPO', 'ENERGY', 'ACOUSTIC', 'INSTRUMENTAL', 'VALENCE'];
+const DIMS = ['Tempo', 'Energy', 'Acoustic', 'Instrumental', 'Valence'];
 const MAX_CHIPS = 4;
 const DEFAULT_AVATAR =
   'https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2F736x%2F81%2F8a%2F1b%2F818a1b89a57c2ee0fb7619b95e11aebd.jpg&f=1&nofb=1&ipt=128fdde9dc857f823db76d46472bc094f791f6bab75af41f2a39a5c6c110ced6';
@@ -76,16 +76,16 @@ export function SoulmateCard({ profile, score, userVector, onTrackPress }:
             </View>
             <View style={styles.scoreBox}>
               <Text style={styles.score}>{score}%</Text>
-              <Text style={styles.scoreLabel}>MATCH</Text>
+              <Text style={styles.scoreLabel}>Match</Text>
             </View>
           </View>
 
-          <Text style={styles.section}>SHARED ARTISTS</Text>
+          <Text style={styles.section}>Shared Artists</Text>
           <View style={styles.tagRow}>
             {profile.topArtists.map((a) => <Tag key={a} label={a} variant="outlined" tint={colors.cyan} />)}
           </View>
 
-          <Text style={styles.section}>TOP TRACKS</Text>
+          <Text style={styles.section}>Top Tracks</Text>
           <View style={styles.chipWrap}>
             {songs.map((s) => {
               const track = findTrackByTitle(s);
@@ -102,13 +102,13 @@ export function SoulmateCard({ profile, score, userVector, onTrackPress }:
 
           <View style={styles.dimRow}>
             <View style={styles.dimCol}>
-              <Text style={styles.section}>ALIGNED</Text>
+              <Text style={styles.section}>Aligned</Text>
               <View style={styles.tagRow}>
                 {aligned.map((d) => <Tag key={d} label={d} variant="filled" tint={colors.green} />)}
               </View>
             </View>
             <View style={styles.dimCol}>
-              <Text style={styles.section}>DIVERGES</Text>
+              <Text style={styles.section}>Diverges</Text>
               <View style={styles.tagRow}>
                 {diverges.map((d) => <Tag key={d} label={d} variant="outlined" tint={colors.textSecondary} />)}
               </View>
@@ -120,8 +120,10 @@ export function SoulmateCard({ profile, score, userVector, onTrackPress }:
   );
 }
 const styles = StyleSheet.create({
-  card: { width: '90%', maxWidth: 420, height: '85%', borderRadius: radius.lg, overflow: 'hidden',
-    backgroundColor: colors.surfaceElevated, justifyContent: 'flex-end' },
+  card: {
+    width: '100%', maxWidth: 420, height: '100%', borderRadius: radius.lg, overflow: 'hidden',
+    backgroundColor: colors.surfaceElevated, justifyContent: 'flex-end'
+  },
   imageRadius: { borderRadius: radius.lg },
   scrim: { justifyContent: 'flex-end', paddingTop: 80 },
   content: { padding: spacing.lg },
@@ -131,13 +133,15 @@ const styles = StyleSheet.create({
   loc: { color: colors.textPrimary, opacity: 0.85, fontSize: 13, marginTop: 2 },
   scoreBox: { alignItems: 'flex-end' },
   score: { color: colors.green, fontFamily: fonts.mono, fontSize: 40, fontWeight: '800' },
-  scoreLabel: { color: colors.green, fontSize: 10, letterSpacing: 3, marginTop: -4 },
-  section: { color: colors.textPrimary, opacity: 0.7, fontSize: 10, letterSpacing: 2, fontWeight: '700', marginTop: spacing.md, marginBottom: spacing.xs },
+  scoreLabel: { color: colors.green, fontSize: 10, letterSpacing: 0.5, marginTop: -4 },
+  section: { color: colors.textPrimary, opacity: 0.7, fontSize: 10, letterSpacing: 0.5, fontWeight: '700', marginTop: spacing.md, marginBottom: spacing.xs },
   tagRow: { flexDirection: 'row', flexWrap: 'wrap' },
   chipWrap: { flexDirection: 'row', flexWrap: 'wrap' },
-  chip: { flexDirection: 'row', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.55)',
+  chip: {
+    flexDirection: 'row', alignItems: 'center', backgroundColor: 'rgba(0,0,0,0.55)',
     borderColor: 'rgba(255,255,255,0.18)', borderWidth: 1, borderRadius: radius.pill,
-    paddingVertical: 6, paddingHorizontal: 12, marginRight: 8, marginBottom: 8, maxWidth: '100%' },
+    paddingVertical: 6, paddingHorizontal: 12, marginRight: 8, marginBottom: 8, maxWidth: '100%'
+  },
   chipHover: { backgroundColor: 'rgba(6,182,212,0.25)', borderColor: colors.cyan },
   chipPlain: { opacity: 0.5 },
   chipText: { color: colors.textPrimary, fontSize: 13, flexShrink: 1 },

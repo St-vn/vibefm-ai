@@ -523,5 +523,353 @@
       "Blinding Lights"
     ],
     "scanCount": 74
+  },
+  {
+    "userId": "user-019",
+    "displayName": "Casey L 65",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
+    "location": "London",
+    "vector": [
+      131.8,
+      0.48,
+      0.24,
+      0.12,
+      0.19
+    ],
+    "topMicroGenres": [
+      "Pop",
+      "Rap",
+      "Indie"
+    ],
+    "topArtists": [
+      "Chief Keef",
+      "Kanye West",
+      "Drake"
+    ],
+    "topSongs": [
+      "Passionfruit",
+      "Supernatural",
+      "Kill Bill"
+    ],
+    "scanCount": 5
+  },
+  {
+    "userId": "user-020",
+    "displayName": "Riley B 85",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
+    "location": "Paris",
+    "vector": [
+      120.5,
+      0.76,
+      0.41,
+      0.02,
+      0.23
+    ],
+    "topMicroGenres": [
+      "Pop",
+      "Rap",
+      "Indie"
+    ],
+    "topArtists": [
+      "Kanye West",
+      "Mass of the Fermenting Dregs",
+      "Drake"
+    ],
+    "topSongs": [
+      "Billie Jean",
+      "Beat It",
+      "bad guy"
+    ],
+    "scanCount": 29
+  },
+  {
+    "userId": "user-021",
+    "displayName": "Jamie R 82",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
+    "location": "Berlin",
+    "vector": [
+      77.7,
+      0.5,
+      0.27,
+      0.07,
+      0.55
+    ],
+    "topMicroGenres": [
+      "Pop",
+      "Rap",
+      "Indie"
+    ],
+    "topArtists": [
+      "ILLIT",
+      "NewJeans",
+      "Drake"
+    ],
+    "topSongs": [
+      "Do the Dance",
+      "Kills",
+      "delusionalism"
+    ],
+    "scanCount": 56
+  },
+  {
+    "userId": "user-022",
+    "displayName": "Casey L 71",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
+    "location": "London",
+    "vector": [
+      105.4,
+      0.46,
+      0.19,
+      0.39,
+      0.84
+    ],
+    "topMicroGenres": [
+      "Pop",
+      "Rap",
+      "Indie"
+    ],
+    "topArtists": [
+      "Drake",
+      "LE SSERAFIM",
+      "Travis Scott"
+    ],
+    "topSongs": [
+      "Kills",
+      "Hotline Bling",
+      "Supernatural"
+    ],
+    "scanCount": 75
+  },
+  {
+    "userId": "user-023",
+    "displayName": "Alex M 15",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
+    "location": "Tokyo",
+    "vector": [
+      130.4,
+      0.44,
+      0.47,
+      0.26,
+      0.74
+    ],
+    "topMicroGenres": [
+      "Pop",
+      "Rap",
+      "Indie"
+    ],
+    "topArtists": [
+      "Drake",
+      "NewJeans",
+      "Kanye West"
+    ],
+    "topSongs": [
+      "Hype Boy",
+      "Kills",
+      "Beat It"
+    ],
+    "scanCount": 62
+  },
+  {
+    "userId": "user-024",
+    "displayName": "Morgan P 79",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
+    "location": "Montreal",
+    "vector": [
+      97.7,
+      0.82,
+      0.35,
+      0.04,
+      0.5
+    ],
+    "topMicroGenres": [
+      "Pop",
+      "Rap",
+      "Indie"
+    ],
+    "topArtists": [
+      "Kanye West",
+      "ILLIT",
+      "Travis Scott"
+    ],
+    "topSongs": [
+      "Supernatural",
+      "HUMBLE.",
+      "Ditto"
+    ],
+    "scanCount": 53
+  },
+  {
+    "userId": "user-025",
+    "displayName": "Alex M 62",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
+    "location": "Berlin",
+    "vector": [
+      159.5,
+      0.23,
+      0.29,
+      0.48,
+      0.41
+    ],
+    "topMicroGenres": [
+      "Pop",
+      "Rap",
+      "Indie"
+    ],
+    "topArtists": [
+      "LE SSERAFIM",
+      "ILLIT",
+      "NewJeans"
+    ],
+    "topSongs": [
+      "ANTIFRAGILE",
+      "Perfect Night",
+      "Hotline Bling"
+    ],
+    "scanCount": 28
+  },
+  {
+    "userId": "user-026",
+    "displayName": "Jordan T 71",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
+    "location": "Montreal",
+    "vector": [
+      171.2,
+      0.34,
+      0.6,
+      0.41,
+      0.12
+    ],
+    "topMicroGenres": [
+      "Pop",
+      "Rap",
+      "Indie"
+    ],
+    "topArtists": [
+      "NewJeans",
+      "LE SSERAFIM",
+      "Travis Scott"
+    ],
+    "topSongs": [
+      "bad guy",
+      "Supernatural",
+      "EARFQUAKE"
+    ],
+    "scanCount": 58
+  },
+  {
+    "userId": "user-027",
+    "displayName": "Jordan T 60",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
+    "location": "Montreal",
+    "vector": [
+      166.7,
+      0.22,
+      0.51,
+      0.21,
+      0.49
+    ],
+    "topMicroGenres": [
+      "Pop",
+      "Rap",
+      "Indie"
+    ],
+    "topArtists": [
+      "LE SSERAFIM",
+      "Kanye West",
+      "Drake"
+    ],
+    "topSongs": [
+      "Hotline Bling",
+      "delusionalism",
+      "EARFQUAKE"
+    ],
+    "scanCount": 51
+  },
+  {
+    "userId": "user-028",
+    "displayName": "Riley B 92",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
+    "location": "Berlin",
+    "vector": [
+      84.3,
+      0.3,
+      0.3,
+      0.21,
+      0.21
+    ],
+    "topMicroGenres": [
+      "Pop",
+      "Rap",
+      "Indie"
+    ],
+    "topArtists": [
+      "Kanye West",
+      "Chief Keef",
+      "NewJeans"
+    ],
+    "topSongs": [
+      "Flashing Lights",
+      "Billie Jean",
+      "Runaway"
+    ],
+    "scanCount": 55
+  },
+  {
+    "userId": "user-029",
+    "displayName": "Morgan P 69",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
+    "location": "New York",
+    "vector": [
+      84.7,
+      0.5,
+      0.4,
+      0.25,
+      0.8
+    ],
+    "topMicroGenres": [
+      "Pop",
+      "Rap",
+      "Indie"
+    ],
+    "topArtists": [
+      "Travis Scott",
+      "Drake",
+      "ILLIT"
+    ],
+    "topSongs": [
+      "Kill Bill",
+      "bad guy",
+      "Ditto"
+    ],
+    "scanCount": 10
+  },
+  {
+    "userId": "user-030",
+    "displayName": "Alex M 67",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
+    "location": "Paris",
+    "vector": [
+      116.4,
+      0.54,
+      0.53,
+      0.47,
+      0.49
+    ],
+    "topMicroGenres": [
+      "Pop",
+      "Rap",
+      "Indie"
+    ],
+    "topArtists": [
+      "Drake",
+      "NewJeans",
+      "ILLIT"
+    ],
+    "topSongs": [
+      "Blinding Lights",
+      "Runaway",
+      "Beat It"
+    ],
+    "scanCount": 14
   }
 ]

@@ -26,7 +26,9 @@
       ]
     },
     "location": "Montreal",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Drake%20Janice%20STFU",
+    "spotifyUrl": "https://open.spotify.com/search/Drake%20Janice%20STFU"
   },
   {
     "id": "chart-montreal-02",
@@ -55,7 +57,9 @@
       ]
     },
     "location": "Montreal",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Drake%20National%20Treasures",
+    "spotifyUrl": "https://open.spotify.com/search/Drake%20National%20Treasures"
   },
   {
     "id": "chart-montreal-03",
@@ -72,7 +76,7 @@
     "speechiness": 0.5069,
     "key": "C#-Major",
     "mode": 1,
-    "microGenre": null,
+    "microGenre": "Pop",
     "moodLabel": "happy",
     "qualitativeDescription": "The song has a very high energy and danceability, combined with acoustic elements and a happy mood, creating an intimate yet energetic feel. While it leans heavily into acousticness and liveness, its high energy and danceability evoke a feeling of warmth.",
     "sonicProfile": {
@@ -84,7 +88,9 @@
       ]
     },
     "location": "Montreal",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Olivia%20Rodrigo%20the%20cure",
+    "spotifyUrl": "https://open.spotify.com/search/Olivia%20Rodrigo%20the%20cure"
   },
   {
     "id": "chart-montreal-04",
@@ -113,7 +119,9 @@
       ]
     },
     "location": "Montreal",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Drake%20Ran%20To%20Atlanta%20%28w/%20Future%20%2C%20Molly%20Santana%20%29",
+    "spotifyUrl": "https://open.spotify.com/search/Drake%20Ran%20To%20Atlanta%20%28w/%20Future%20%2C%20Molly%20Santana%20%29"
   },
   {
     "id": "chart-montreal-05",
@@ -142,7 +150,9 @@
       ]
     },
     "location": "Montreal",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Drake%20Whisper%20My%20Name",
+    "spotifyUrl": "https://open.spotify.com/search/Drake%20Whisper%20My%20Name"
   },
   {
     "id": "chart-montreal-06",
@@ -159,7 +169,7 @@
     "speechiness": 0.5824,
     "key": "Ab-Minor",
     "mode": 1,
-    "microGenre": null,
+    "microGenre": "Pop",
     "moodLabel": "energetic",
     "qualitativeDescription": "This track showcases an intimate and natural sonic texture, evoking a warm and earthy emotional character. Its acoustic nature, combined with a lo-fi aesthetic, creates a sense of closeness and authenticity, perfect for reflective listening.",
     "sonicProfile": {
@@ -171,7 +181,9 @@
       ]
     },
     "location": "Montreal",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Drake%20Shabang",
+    "spotifyUrl": "https://open.spotify.com/search/Drake%20Shabang"
   },
   {
     "id": "chart-montreal-07",
@@ -200,7 +212,9 @@
       ]
     },
     "location": "Montreal",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Ella%20Langley%20Choosin%27%20Texas",
+    "spotifyUrl": "https://open.spotify.com/search/Ella%20Langley%20Choosin%27%20Texas"
   },
   {
     "id": "chart-montreal-08",
@@ -229,7 +243,9 @@
       ]
     },
     "location": "Montreal",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Drake%202%20Hard%204%20The%20Radio",
+    "spotifyUrl": "https://open.spotify.com/search/Drake%202%20Hard%204%20The%20Radio"
   },
   {
     "id": "chart-montreal-09",
@@ -258,7 +274,9 @@
       ]
     },
     "location": "Montreal",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Drake%20Plot%20Twist",
+    "spotifyUrl": "https://open.spotify.com/search/Drake%20Plot%20Twist"
   },
   {
     "id": "chart-montreal-10",
@@ -287,7 +305,9 @@
       ]
     },
     "location": "Montreal",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Drake%20Dust",
+    "spotifyUrl": "https://open.spotify.com/search/Drake%20Dust"
   },
   {
     "id": "chart-global-01",
@@ -304,7 +324,7 @@
     "speechiness": 0.5069,
     "key": "C#-Major",
     "mode": 1,
-    "microGenre": null,
+    "microGenre": "Pop",
     "moodLabel": "happy",
     "qualitativeDescription": "This track possesses a rich, intimate sonic texture characterized by its acoustic and organic elements, likely featuring prominent instrumentation that evokes a sense of natural warmth. The emotional character is predominantly happy, infused with a lively energy that promotes dancing, suggesting an uplifting and engaging listening experience.",
     "sonicProfile": {
@@ -316,7 +336,9 @@
       ]
     },
     "location": "Global",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Olivia%20Rodrigo%20the%20cure",
+    "spotifyUrl": "https://open.spotify.com/search/Olivia%20Rodrigo%20the%20cure"
   },
   {
     "id": "chart-global-02",
@@ -345,7 +367,9 @@
       ]
     },
     "location": "Global",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Michael%20Jackson%20Billie%20Jean",
+    "spotifyUrl": "https://open.spotify.com/search/Michael%20Jackson%20Billie%20Jean"
   },
   {
     "id": "chart-global-03",
@@ -374,7 +398,9 @@
       ]
     },
     "location": "Global",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Justin%20Bieber%20Beauty%20And%20A%20Beat%20%28w/%20Nicki%20Minaj%20%29",
+    "spotifyUrl": "https://open.spotify.com/search/Justin%20Bieber%20Beauty%20And%20A%20Beat%20%28w/%20Nicki%20Minaj%20%29"
   },
   {
     "id": "chart-global-04",
@@ -403,7 +429,9 @@
       ]
     },
     "location": "Global",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Drake%20Janice%20STFU",
+    "spotifyUrl": "https://open.spotify.com/search/Drake%20Janice%20STFU"
   },
   {
     "id": "chart-global-05",
@@ -420,7 +448,7 @@
     "speechiness": 0.53,
     "key": "C#-Minor",
     "mode": 1,
-    "microGenre": "swim",
+    "microGenre": "kpop",
     "moodLabel": "energetic",
     "qualitativeDescription": "SWIM by BTS, with an upbeat tempo and high energy, delivers an energetic and highly acoustic sonic texture. The track, despite its instrumental elements, maintains a noticeable speechiness, adding to its dynamic and expressive character.",
     "sonicProfile": {
@@ -432,7 +460,9 @@
       ]
     },
     "location": "Global",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=BTS%20SWIM",
+    "spotifyUrl": "https://open.spotify.com/search/BTS%20SWIM"
   },
   {
     "id": "chart-global-06",
@@ -461,7 +491,9 @@
       ]
     },
     "location": "Global",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Dominic%20Fike%20Babydoll",
+    "spotifyUrl": "https://open.spotify.com/search/Dominic%20Fike%20Babydoll"
   },
   {
     "id": "chart-global-07",
@@ -490,7 +522,9 @@
       ]
     },
     "location": "Global",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Michael%20Jackson%20Beat%20It",
+    "spotifyUrl": "https://open.spotify.com/search/Michael%20Jackson%20Beat%20It"
   },
   {
     "id": "chart-global-08",
@@ -519,7 +553,9 @@
       ]
     },
     "location": "Global",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Olivia%20Rodrigo%20drop%20dead",
+    "spotifyUrl": "https://open.spotify.com/search/Olivia%20Rodrigo%20drop%20dead"
   },
   {
     "id": "chart-global-09",
@@ -548,7 +584,9 @@
       ]
     },
     "location": "Global",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Drake%20National%20Treasures",
+    "spotifyUrl": "https://open.spotify.com/search/Drake%20National%20Treasures"
   },
   {
     "id": "chart-global-10",
@@ -577,6 +615,8 @@
       ]
     },
     "location": "Global",
-    "scannedAt": ""
+    "scannedAt": "",
+    "appleMusicUrl": "https://music.apple.com/search?term=Malcolm%20Todd%20Earrings",
+    "spotifyUrl": "https://open.spotify.com/search/Malcolm%20Todd%20Earrings"
   }
 ]
