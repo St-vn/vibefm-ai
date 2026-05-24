@@ -7,7 +7,7 @@ import { WaveformRing } from '../../src/components/WaveformRing';
 import { SourceToggle } from '../../src/components/SourceToggle';
 import { ResultSheet } from '../../src/components/ResultSheet';
 import { runScan } from '../../src/lib/scanPipeline';
-import { bytesToBase64 } from '../../src/lib/base64';
+import { bytesToBase64, base64ToBytes } from '../../src/lib/base64';
 import { useStore } from '../../src/data/store';
 import { Track } from '../../src/types';
 
@@ -85,14 +85,17 @@ export default function Capture() {
       setPhase('processing');
       const uri = picked.assets[0].uri;
       // expo-file-system File API is native-only; on web read the blob URI via fetch.
-      let buf: ArrayBuffer;
+      let all: Uint8Array;
       if (Platform.OS === 'web') {
-        buf = await (await fetch(uri)).arrayBuffer();
+        const buf = await (await fetch(uri)).arrayBuffer();
+        all = new Uint8Array(buf);
       } else {
-        const { File } = require('expo-file-system');
-        buf = await new File(uri).arrayBuffer();
+        const FileSystem = require('expo-file-system');
+        const base64 = await FileSystem.readAsStringAsync(uri, {
+          encoding: FileSystem.EncodingType.Base64,
+        });
+        all = base64ToBytes(base64);
       }
-      const all = new Uint8Array(buf);
       // Strip the 44-byte WAV header at the BYTE level before base64 (never trim the base64 string).
       const pcm = all.length > WAV_HEADER_BYTES ? all.subarray(WAV_HEADER_BYTES) : all;
       await processBase64(bytesToBase64(pcm));
