@@ -1,0 +1,842 @@
+[
+  {
+    "userId": "user-001",
+    "displayName": "Alex M",
+    "location": "Paris",
+    "vector": [
+      120.1,
+      0.8,
+      0.11,
+      0.12,
+      0.7
+    ],
+    "topMicroGenres": [
+      "Hard Trap",
+      "Jersey Club",
+      "Electronic"
+    ],
+    "topArtists": [
+      "Daft Punk",
+      "SZA",
+      "Billie Eilish"
+    ],
+    "topSongs": [
+      "Kill Bill",
+      "Starboy",
+      "Nights"
+    ],
+    "scanCount": 32
+  },
+  {
+    "userId": "user-002",
+    "displayName": "Jamie R",
+    "location": "Tokyo",
+    "vector": [
+      102.6,
+      0.37,
+      0.06,
+      0.17,
+      0.94
+    ],
+    "topMicroGenres": [
+      "Bedroom Pop",
+      "Hyperpop",
+      "Jersey Club"
+    ],
+    "topArtists": [
+      "Frank Ocean",
+      "Daft Punk",
+      "Billie Eilish"
+    ],
+    "topSongs": [
+      "bad guy",
+      "Nights",
+      "EARFQUAKE"
+    ],
+    "scanCount": 67
+  },
+  {
+    "userId": "user-003",
+    "displayName": "Sam K",
+    "location": "Berlin",
+    "vector": [
+      169.2,
+      0.38,
+      0.75,
+      0.09,
+      0.49
+    ],
+    "topMicroGenres": [
+      "Jersey Club",
+      "Bedroom Pop",
+      "Neo-Soul"
+    ],
+    "topArtists": [
+      "Kendrick Lamar",
+      "The Weeknd",
+      "Drake"
+    ],
+    "topSongs": [
+      "EARFQUAKE",
+      "Starboy",
+      "HUMBLE."
+    ],
+    "scanCount": 8
+  },
+  {
+    "userId": "user-004",
+    "displayName": "Riley B",
+    "location": "London",
+    "vector": [
+      129.1,
+      0.95,
+      0.78,
+      0.25,
+      0.3
+    ],
+    "topMicroGenres": [
+      "Electronic",
+      "Hard Trap",
+      "Neo-Soul"
+    ],
+    "topArtists": [
+      "Daft Punk",
+      "Kendrick Lamar",
+      "Drake"
+    ],
+    "topSongs": [
+      "bad guy",
+      "Starboy",
+      "Blinding Lights"
+    ],
+    "scanCount": 27
+  },
+  {
+    "userId": "user-005",
+    "displayName": "Jordan T",
+    "location": "London",
+    "vector": [
+      109.0,
+      0.76,
+      0.23,
+      0.38,
+      0.54
+    ],
+    "topMicroGenres": [
+      "Jersey Club",
+      "Dark R&B",
+      "Bedroom Pop"
+    ],
+    "topArtists": [
+      "Frank Ocean",
+      "The Weeknd",
+      "Daft Punk"
+    ],
+    "topSongs": [
+      "Nights",
+      "bad guy",
+      "Starboy"
+    ],
+    "scanCount": 73
+  },
+  {
+    "userId": "user-006",
+    "displayName": "Morgan P",
+    "location": "Los Angeles",
+    "vector": [
+      174.7,
+      0.32,
+      0.51,
+      0.46,
+      0.37
+    ],
+    "topMicroGenres": [
+      "Hyperpop",
+      "Electronic",
+      "Dark R&B"
+    ],
+    "topArtists": [
+      "Frank Ocean",
+      "The Weeknd",
+      "Billie Eilish"
+    ],
+    "topSongs": [
+      "EARFQUAKE",
+      "Nights",
+      "HUMBLE."
+    ],
+    "scanCount": 29
+  },
+  {
+    "userId": "user-007",
+    "displayName": "Casey L",
+    "location": "Berlin",
+    "vector": [
+      82.3,
+      0.53,
+      0.74,
+      0.27,
+      0.3
+    ],
+    "topMicroGenres": [
+      "Indie Folk",
+      "Neo-Soul",
+      "Dark R&B"
+    ],
+    "topArtists": [
+      "Billie Eilish",
+      "The Weeknd",
+      "Daft Punk"
+    ],
+    "topSongs": [
+      "Blinding Lights",
+      "Nights",
+      "Kill Bill"
+    ],
+    "scanCount": 27
+  },
+  {
+    "userId": "user-008",
+    "displayName": "Drew N",
+    "location": "London",
+    "vector": [
+      161.6,
+      0.74,
+      0.07,
+      0.24,
+      0.31
+    ],
+    "topMicroGenres": [
+      "Hard Trap",
+      "Jersey Club",
+      "Neo-Soul"
+    ],
+    "topArtists": [
+      "SZA",
+      "Billie Eilish",
+      "Tyler the Creator"
+    ],
+    "topSongs": [
+      "Blinding Lights",
+      "bad guy",
+      "HUMBLE."
+    ],
+    "scanCount": 6
+  },
+  {
+    "userId": "user-009",
+    "displayName": "Quinn A",
+    "location": "New York",
+    "vector": [
+      174.1,
+      0.98,
+      0.36,
+      0.45,
+      0.54
+    ],
+    "topMicroGenres": [
+      "Electronic",
+      "Jersey Club",
+      "Hard Trap"
+    ],
+    "topArtists": [
+      "Kendrick Lamar",
+      "Billie Eilish",
+      "Frank Ocean"
+    ],
+    "topSongs": [
+      "EARFQUAKE",
+      "bad guy",
+      "Blinding Lights"
+    ],
+    "scanCount": 12
+  },
+  {
+    "userId": "user-010",
+    "displayName": "Blake S",
+    "location": "Montreal",
+    "vector": [
+      132.5,
+      0.33,
+      0.63,
+      0.06,
+      0.47
+    ],
+    "topMicroGenres": [
+      "Jersey Club",
+      "Bedroom Pop",
+      "Electronic"
+    ],
+    "topArtists": [
+      "Daft Punk",
+      "SZA",
+      "Tyler the Creator"
+    ],
+    "topSongs": [
+      "Kill Bill",
+      "HUMBLE.",
+      "bad guy"
+    ],
+    "scanCount": 25
+  },
+  {
+    "userId": "user-011",
+    "displayName": "Avery F",
+    "location": "Paris",
+    "vector": [
+      158.6,
+      0.64,
+      0.21,
+      0.43,
+      0.44
+    ],
+    "topMicroGenres": [
+      "Indie Folk",
+      "Electronic",
+      "Bedroom Pop"
+    ],
+    "topArtists": [
+      "Kendrick Lamar",
+      "Drake",
+      "Billie Eilish"
+    ],
+    "topSongs": [
+      "bad guy",
+      "Kill Bill",
+      "EARFQUAKE"
+    ],
+    "scanCount": 8
+  },
+  {
+    "userId": "user-012",
+    "displayName": "Dakota W",
+    "location": "Toronto",
+    "vector": [
+      170.2,
+      0.39,
+      0.27,
+      0.01,
+      0.94
+    ],
+    "topMicroGenres": [
+      "Electronic",
+      "Hard Trap",
+      "Bedroom Pop"
+    ],
+    "topArtists": [
+      "Billie Eilish",
+      "Daft Punk",
+      "Drake"
+    ],
+    "topSongs": [
+      "Starboy",
+      "God's Plan",
+      "Blinding Lights"
+    ],
+    "scanCount": 74
+  },
+  {
+    "userId": "user-013",
+    "displayName": "Skyler H",
+    "location": "London",
+    "vector": [
+      113.0,
+      0.46,
+      0.71,
+      0.47,
+      0.41
+    ],
+    "topMicroGenres": [
+      "Neo-Soul",
+      "Dark R&B",
+      "Hard Trap"
+    ],
+    "topArtists": [
+      "Drake",
+      "SZA",
+      "Daft Punk"
+    ],
+    "topSongs": [
+      "bad guy",
+      "Starboy",
+      "HUMBLE."
+    ],
+    "scanCount": 79
+  },
+  {
+    "userId": "user-014",
+    "displayName": "Reese C",
+    "location": "Paris",
+    "vector": [
+      112.2,
+      0.53,
+      0.57,
+      0.44,
+      0.68
+    ],
+    "topMicroGenres": [
+      "Electronic",
+      "Hard Trap",
+      "Hyperpop"
+    ],
+    "topArtists": [
+      "SZA",
+      "Tyler the Creator",
+      "Daft Punk"
+    ],
+    "topSongs": [
+      "bad guy",
+      "Nights",
+      "EARFQUAKE"
+    ],
+    "scanCount": 77
+  },
+  {
+    "userId": "user-015",
+    "displayName": "Finley D",
+    "location": "Toronto",
+    "vector": [
+      110.4,
+      0.49,
+      0.49,
+      0.32,
+      0.78
+    ],
+    "topMicroGenres": [
+      "Hyperpop",
+      "Electronic",
+      "Indie Folk"
+    ],
+    "topArtists": [
+      "Tyler the Creator",
+      "Daft Punk",
+      "SZA"
+    ],
+    "topSongs": [
+      "Starboy",
+      "Nights",
+      "God's Plan"
+    ],
+    "scanCount": 36
+  },
+  {
+    "userId": "user-016",
+    "displayName": "Rowan G",
+    "location": "Paris",
+    "vector": [
+      134.1,
+      0.79,
+      0.74,
+      0.46,
+      0.69
+    ],
+    "topMicroGenres": [
+      "Bedroom Pop",
+      "Jersey Club",
+      "Neo-Soul"
+    ],
+    "topArtists": [
+      "The Weeknd",
+      "SZA",
+      "Billie Eilish"
+    ],
+    "topSongs": [
+      "Blinding Lights",
+      "bad guy",
+      "Nights"
+    ],
+    "scanCount": 20
+  },
+  {
+    "userId": "user-017",
+    "displayName": "Peyton V",
+    "location": "Berlin",
+    "vector": [
+      121.3,
+      0.21,
+      0.12,
+      0.08,
+      0.55
+    ],
+    "topMicroGenres": [
+      "Hyperpop",
+      "Indie Folk",
+      "Neo-Soul"
+    ],
+    "topArtists": [
+      "Kendrick Lamar",
+      "Daft Punk",
+      "Frank Ocean"
+    ],
+    "topSongs": [
+      "bad guy",
+      "Blinding Lights",
+      "Starboy"
+    ],
+    "scanCount": 8
+  },
+  {
+    "userId": "user-018",
+    "displayName": "Sage O",
+    "location": "Los Angeles",
+    "vector": [
+      79.5,
+      0.31,
+      0.41,
+      0.09,
+      0.33
+    ],
+    "topMicroGenres": [
+      "Hard Trap",
+      "Electronic",
+      "Bedroom Pop"
+    ],
+    "topArtists": [
+      "Billie Eilish",
+      "SZA",
+      "Drake"
+    ],
+    "topSongs": [
+      "God's Plan",
+      "Kill Bill",
+      "Nights"
+    ],
+    "scanCount": 63
+  },
+  {
+    "userId": "user-019",
+    "displayName": "River Z",
+    "location": "New York",
+    "vector": [
+      159.8,
+      0.34,
+      0.1,
+      0.07,
+      0.28
+    ],
+    "topMicroGenres": [
+      "Jersey Club",
+      "Indie Folk",
+      "Electronic"
+    ],
+    "topArtists": [
+      "Daft Punk",
+      "Drake",
+      "Billie Eilish"
+    ],
+    "topSongs": [
+      "God's Plan",
+      "Blinding Lights",
+      "EARFQUAKE"
+    ],
+    "scanCount": 35
+  },
+  {
+    "userId": "user-020",
+    "displayName": "Phoenix Y",
+    "location": "Berlin",
+    "vector": [
+      167.2,
+      0.41,
+      0.22,
+      0.41,
+      0.31
+    ],
+    "topMicroGenres": [
+      "Electronic",
+      "Dark R&B",
+      "Hard Trap"
+    ],
+    "topArtists": [
+      "Tyler the Creator",
+      "Billie Eilish",
+      "The Weeknd"
+    ],
+    "topSongs": [
+      "HUMBLE.",
+      "bad guy",
+      "Kill Bill"
+    ],
+    "scanCount": 12
+  },
+  {
+    "userId": "user-021",
+    "displayName": "Taylor X",
+    "location": "London",
+    "vector": [
+      71.6,
+      0.65,
+      0.6,
+      0.47,
+      0.69
+    ],
+    "topMicroGenres": [
+      "Neo-Soul",
+      "Indie Folk",
+      "Hard Trap"
+    ],
+    "topArtists": [
+      "The Weeknd",
+      "Tyler the Creator",
+      "Drake"
+    ],
+    "topSongs": [
+      "bad guy",
+      "HUMBLE.",
+      "Kill Bill"
+    ],
+    "scanCount": 33
+  },
+  {
+    "userId": "user-022",
+    "displayName": "Hayden I",
+    "location": "Montreal",
+    "vector": [
+      70.9,
+      0.2,
+      0.55,
+      0.08,
+      0.54
+    ],
+    "topMicroGenres": [
+      "Hyperpop",
+      "Dark R&B",
+      "Neo-Soul"
+    ],
+    "topArtists": [
+      "Frank Ocean",
+      "SZA",
+      "Drake"
+    ],
+    "topSongs": [
+      "Kill Bill",
+      "bad guy",
+      "God's Plan"
+    ],
+    "scanCount": 23
+  },
+  {
+    "userId": "user-023",
+    "displayName": "Emery J",
+    "location": "Toronto",
+    "vector": [
+      75.6,
+      0.58,
+      0.28,
+      0.47,
+      0.11
+    ],
+    "topMicroGenres": [
+      "Jersey Club",
+      "Bedroom Pop",
+      "Hard Trap"
+    ],
+    "topArtists": [
+      "Daft Punk",
+      "Kendrick Lamar",
+      "Frank Ocean"
+    ],
+    "topSongs": [
+      "Nights",
+      "EARFQUAKE",
+      "God's Plan"
+    ],
+    "scanCount": 25
+  },
+  {
+    "userId": "user-024",
+    "displayName": "Shiloh U",
+    "location": "Paris",
+    "vector": [
+      74.1,
+      0.36,
+      0.38,
+      0.26,
+      0.31
+    ],
+    "topMicroGenres": [
+      "Hyperpop",
+      "Hard Trap",
+      "Bedroom Pop"
+    ],
+    "topArtists": [
+      "Frank Ocean",
+      "Tyler the Creator",
+      "The Weeknd"
+    ],
+    "topSongs": [
+      "Nights",
+      "Kill Bill",
+      "God's Plan"
+    ],
+    "scanCount": 24
+  },
+  {
+    "userId": "user-025",
+    "displayName": "Lennon E",
+    "location": "New York",
+    "vector": [
+      133.1,
+      0.5,
+      0.63,
+      0.25,
+      0.62
+    ],
+    "topMicroGenres": [
+      "Bedroom Pop",
+      "Hard Trap",
+      "Electronic"
+    ],
+    "topArtists": [
+      "Billie Eilish",
+      "Daft Punk",
+      "Drake"
+    ],
+    "topSongs": [
+      "bad guy",
+      "HUMBLE.",
+      "Kill Bill"
+    ],
+    "scanCount": 66
+  },
+  {
+    "userId": "user-026",
+    "displayName": "Harlow Q",
+    "location": "Montreal",
+    "vector": [
+      105.6,
+      0.58,
+      0.63,
+      0.15,
+      0.74
+    ],
+    "topMicroGenres": [
+      "Bedroom Pop",
+      "Hard Trap",
+      "Dark R&B"
+    ],
+    "topArtists": [
+      "Tyler the Creator",
+      "Daft Punk",
+      "Drake"
+    ],
+    "topSongs": [
+      "Nights",
+      "EARFQUAKE",
+      "HUMBLE."
+    ],
+    "scanCount": 46
+  },
+  {
+    "userId": "user-027",
+    "displayName": "Marlowe T",
+    "location": "Los Angeles",
+    "vector": [
+      149.3,
+      0.78,
+      0.22,
+      0.47,
+      0.12
+    ],
+    "topMicroGenres": [
+      "Hyperpop",
+      "Hard Trap",
+      "Dark R&B"
+    ],
+    "topArtists": [
+      "Frank Ocean",
+      "SZA",
+      "The Weeknd"
+    ],
+    "topSongs": [
+      "EARFQUAKE",
+      "Kill Bill",
+      "Nights"
+    ],
+    "scanCount": 51
+  },
+  {
+    "userId": "user-028",
+    "displayName": "Arlo N",
+    "location": "Montreal",
+    "vector": [
+      159.8,
+      0.94,
+      0.59,
+      0.28,
+      0.7
+    ],
+    "topMicroGenres": [
+      "Indie Folk",
+      "Neo-Soul",
+      "Hard Trap"
+    ],
+    "topArtists": [
+      "SZA",
+      "Drake",
+      "Frank Ocean"
+    ],
+    "topSongs": [
+      "HUMBLE.",
+      "bad guy",
+      "God's Plan"
+    ],
+    "scanCount": 37
+  },
+  {
+    "userId": "user-029",
+    "displayName": "Wren M",
+    "location": "Tokyo",
+    "vector": [
+      155.5,
+      0.95,
+      0.64,
+      0.31,
+      0.23
+    ],
+    "topMicroGenres": [
+      "Neo-Soul",
+      "Jersey Club",
+      "Electronic"
+    ],
+    "topArtists": [
+      "Tyler the Creator",
+      "Kendrick Lamar",
+      "Daft Punk"
+    ],
+    "topSongs": [
+      "HUMBLE.",
+      "bad guy",
+      "EARFQUAKE"
+    ],
+    "scanCount": 48
+  },
+  {
+    "userId": "user-030",
+    "displayName": "Indigo P",
+    "location": "New York",
+    "vector": [
+      126.2,
+      0.58,
+      0.65,
+      0.1,
+      0.82
+    ],
+    "topMicroGenres": [
+      "Neo-Soul",
+      "Bedroom Pop",
+      "Electronic"
+    ],
+    "topArtists": [
+      "The Weeknd",
+      "Tyler the Creator",
+      "Frank Ocean"
+    ],
+    "topSongs": [
+      "Nights",
+      "bad guy",
+      "Blinding Lights"
+    ],
+    "scanCount": 77
+  }
+]
