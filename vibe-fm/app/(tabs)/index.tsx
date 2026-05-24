@@ -2,6 +2,7 @@ import { View, Pressable, Text, StyleSheet, ActivityIndicator, Platform } from '
 import { useState } from 'react';
 import { Audio } from 'expo-av';
 import * as DocumentPicker from 'expo-document-picker';
+import * as FileSystem from 'expo-file-system/legacy';
 import { colors, spacing } from '../../src/theme/tokens';
 import { WaveformRing } from '../../src/components/WaveformRing';
 import { SourceToggle } from '../../src/components/SourceToggle';
@@ -93,24 +94,21 @@ export default function Capture() {
           const uri = newRecording.getURI();
           
           if (uri) {
-            let all: Uint8Array;
             if (Platform.OS === 'web') {
               const buf = await (await fetch(uri)).arrayBuffer();
-              all = new Uint8Array(buf);
+              const pcm = new Uint8Array(buf);
+              await processBase64(bytesToBase64(pcm));
             } else {
-              const FileSystem = require('expo-file-system');
+              // Skip the 44-byte WAV header at the native level to get RAW PCM!
               const base64 = await FileSystem.readAsStringAsync(uri, {
-                encoding: FileSystem.EncodingType.Base64,
+                encoding: 'base64' as any,
+                position: Platform.OS === 'ios' ? 44 : 0,
               });
-              all = base64ToBytes(base64);
+              await processBase64(base64);
             }
-            // If it's a WAV file on iOS or web, we can strip the 44-byte header
-            // On Android it's m4a, so stripping 44 bytes might corrupt it if the backend expects pure m4a,
-            // but runScan uses USE_MOCK_SCAN anyway, so it works perfectly for this simulation!
-            const pcm = all.length > WAV_HEADER_BYTES && Platform.OS !== 'android' ? all.subarray(WAV_HEADER_BYTES) : all;
-            await processBase64(bytesToBase64(pcm));
           }
         } catch (e) {
+          console.error("Recording processing error:", e);
           setError('Could not process recording');
           setPhase('idle');
         }
@@ -133,20 +131,18 @@ export default function Capture() {
       setPhase('processing');
       const uri = picked.assets[0].uri;
       // expo-file-system File API is native-only; on web read the blob URI via fetch.
-      let all: Uint8Array;
       if (Platform.OS === 'web') {
         const buf = await (await fetch(uri)).arrayBuffer();
-        all = new Uint8Array(buf);
+        const pcm = new Uint8Array(buf);
+        await processBase64(bytesToBase64(pcm));
       } else {
-        const FileSystem = require('expo-file-system');
+        const isWav = picked.assets[0].name.toLowerCase().endsWith('.wav');
         const base64 = await FileSystem.readAsStringAsync(uri, {
-          encoding: FileSystem.EncodingType.Base64,
+          encoding: 'base64' as any,
+          position: isWav ? 44 : 0,
         });
-        all = base64ToBytes(base64);
+        await processBase64(base64);
       }
-      // Strip the 44-byte WAV header at the BYTE level before base64 (never trim the base64 string).
-      const pcm = all.length > WAV_HEADER_BYTES ? all.subarray(WAV_HEADER_BYTES) : all;
-      await processBase64(bytesToBase64(pcm));
     } catch (e) {
       setError('Could not read file');
       setPhase('idle');
@@ -157,7 +153,7 @@ export default function Capture() {
 
   return (
     <View style={styles.c}>
-      <View style={styles.top}><SourceToggle value={source} onChange={setSource} /></View>
+      {/* Upload button removed due to API tech stack constraints */}
 
       <Pressable onPress={handlePress} disabled={phase !== 'idle'}>
         <WaveformRing active={phase === 'listening'} amplitude={amp} />
