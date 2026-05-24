@@ -80,10 +80,10 @@ export default function Matchmaking() {
   return (
     <View style={styles.c}>
       {/* Background feedback layers — behind the card, full-screen, non-interactive */}
-      <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.matchBg, matchBgStyle]}>
+      <Animated.View style={[StyleSheet.absoluteFill, styles.matchBg, matchBgStyle]}>
         <Ionicons name="checkmark" size={220} color={colors.green} />
       </Animated.View>
-      <Animated.View pointerEvents="none" style={[StyleSheet.absoluteFill, styles.skipBg, skipBgStyle]}>
+      <Animated.View style={[StyleSheet.absoluteFill, styles.skipBg, skipBgStyle]}>
         <Ionicons name="close" size={220} color={colors.danger} />
       </Animated.View>
 
@@ -114,6 +114,6 @@ const styles = StyleSheet.create({
   gateCount: { color: colors.cyan, fontSize: 32, fontWeight: '700', marginTop: spacing.lg },
   btn: { marginTop: spacing.xl, borderColor: colors.cyan, borderWidth: 1, borderRadius: 999, paddingHorizontal: 24, paddingVertical: 12 },
   btnTxt: { color: colors.cyan, letterSpacing: 2, fontWeight: '700' },
-  matchBg: { backgroundColor: 'rgba(34,197,94,0.22)', alignItems: 'center', justifyContent: 'center' },
-  skipBg: { backgroundColor: 'rgba(239,68,68,0.22)', alignItems: 'center', justifyContent: 'center' },
+  matchBg: { backgroundColor: 'rgba(34,197,94,0.85)', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' },
+  skipBg: { backgroundColor: 'rgba(239,68,68,0.85)', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none' },
 });

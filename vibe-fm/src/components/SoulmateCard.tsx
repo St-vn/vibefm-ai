@@ -62,7 +62,7 @@ export function SoulmateCard({ profile, score, userVector, onTrackPress }:
   const songs = profile.topSongs.slice(0, MAX_CHIPS);
 
   return (
-    <ImageBackground source={resolveAvatar(profile.avatar)} style={styles.card} imageStyle={styles.image}>
+    <ImageBackground source={resolveAvatar(profile.avatar)} resizeMode="cover" style={styles.card} imageStyle={styles.imageRadius}>
       <LinearGradient
         colors={['transparent', 'rgba(0,0,0,0.55)', 'rgba(0,0,0,0.95)']}
         locations={[0, 0.45, 1]}
@@ -122,7 +122,7 @@ export function SoulmateCard({ profile, score, userVector, onTrackPress }:
 const styles = StyleSheet.create({
   card: { width: '90%', height: '82%', borderRadius: radius.lg, overflow: 'hidden',
     backgroundColor: colors.surfaceElevated, justifyContent: 'flex-end' },
-  image: { resizeMode: 'cover' },
+  imageRadius: { borderRadius: radius.lg },
   scrim: { justifyContent: 'flex-end', paddingTop: 80 },
   content: { padding: spacing.lg },
   identityRow: { flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between' },
