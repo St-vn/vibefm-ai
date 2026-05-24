@@ -120,7 +120,7 @@ export function SoulmateCard({ profile, score, userVector, onTrackPress }:
   );
 }
 const styles = StyleSheet.create({
-  card: { width: '90%', height: '82%', borderRadius: radius.lg, overflow: 'hidden',
+  card: { width: '90%', maxWidth: 420, height: '85%', borderRadius: radius.lg, overflow: 'hidden',
     backgroundColor: colors.surfaceElevated, justifyContent: 'flex-end' },
   imageRadius: { borderRadius: radius.lg },
   scrim: { justifyContent: 'flex-end', paddingTop: 80 },

@@ -2,6 +2,7 @@
   {
     "userId": "vip-001",
     "displayName": "Kanye West",
+    "avatar": "local:kanye.jpg",
     "location": "Los Angeles",
     "vector": [
       88.0,
@@ -30,6 +31,7 @@
   {
     "userId": "vip-002",
     "displayName": "Drake",
+    "avatar": "local:drake.jpg",
     "location": "Toronto",
     "vector": [
       115.0,
@@ -58,6 +60,7 @@
   {
     "userId": "vip-003",
     "displayName": "stvn",
+    "avatar": "local:stvn.jpg",
     "location": "Montreal",
     "vector": [
       135.0,
@@ -89,6 +92,7 @@
   {
     "userId": "vip-004",
     "displayName": "Minji",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.nCQ7biGbw5RG2MkWqxBtWAHaKX%3Fpid%3DApi&f=1&ipt=6dbf1a30b21e651af2d27b090f39039879667374f7a77a29e1589bc7bad1f9f4",
     "location": "Seoul",
     "vector": [
       130.0,
@@ -117,6 +121,7 @@
   {
     "userId": "vip-005",
     "displayName": "Chaewon",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpreview.redd.it%2F230701-le-sserafim-weverse-update-chaewon-v0-5dr3fxw42a9b1.jpg%3Fwidth%3D1333%26format%3Dpjpg%26auto%3Dwebp%26s%3D2403bdf219316ef5b51a0c4d7f915d67ee93fa73&f=1&nofb=1&ipt=6402b93192ec25456dde3f71caa3b6809dca916c60482c9ee60892147c7032a9",
     "location": "Seoul",
     "vector": [
       122.0,
@@ -145,6 +150,7 @@
   {
     "userId": "vip-006",
     "displayName": "Michael Jackson",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2F76%2F66%2Fb6%2F7666b632afc1c497e580eaab75b431bc.jpg&f=1&nofb=1&ipt=02dd4bc957caef23e7253353945a8b090f9779e6ff4bb5f1c46cdd2d8c62a281",
     "location": "Los Angeles",
     "vector": [
       118.0,
@@ -173,6 +179,7 @@
   {
     "userId": "user-001",
     "displayName": "Alex M",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
     "location": "Paris",
     "vector": [
       120.1,
@@ -201,6 +208,7 @@
   {
     "userId": "user-002",
     "displayName": "Jamie R",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
     "location": "Tokyo",
     "vector": [
       102.6,
@@ -229,6 +237,7 @@
   {
     "userId": "user-003",
     "displayName": "Sam K",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
     "location": "Berlin",
     "vector": [
       169.2,
@@ -257,6 +266,7 @@
   {
     "userId": "user-004",
     "displayName": "Riley B",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
     "location": "London",
     "vector": [
       129.1,
@@ -285,6 +295,7 @@
   {
     "userId": "user-005",
     "displayName": "Jordan T",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
     "location": "London",
     "vector": [
       109.0,
@@ -313,6 +324,7 @@
   {
     "userId": "user-006",
     "displayName": "Morgan P",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
     "location": "Los Angeles",
     "vector": [
       174.7,
@@ -341,6 +353,7 @@
   {
     "userId": "user-007",
     "displayName": "Casey L",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
     "location": "Berlin",
     "vector": [
       82.3,
@@ -369,6 +382,7 @@
   {
     "userId": "user-008",
     "displayName": "Drew N",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
     "location": "London",
     "vector": [
       161.6,
@@ -397,6 +411,7 @@
   {
     "userId": "user-009",
     "displayName": "Quinn A",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
     "location": "New York",
     "vector": [
       174.1,
@@ -425,6 +440,7 @@
   {
     "userId": "user-010",
     "displayName": "Blake S",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
     "location": "Montreal",
     "vector": [
       132.5,
@@ -453,6 +469,7 @@
   {
     "userId": "user-011",
     "displayName": "Avery F",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
     "location": "Paris",
     "vector": [
       158.6,
@@ -481,6 +498,7 @@
   {
     "userId": "user-012",
     "displayName": "Dakota W",
+    "avatar": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapers.com%2Fimages%2Fhd%2Fbasic-default-pfp-pxi77qv5o0zuz8j3.jpg&f=1&nofb=1&ipt=062a758d87f9dbb62839dda904eda513d0dc75c91b22c862b9eb98b550165f40",
     "location": "Toronto",
     "vector": [
       170.2,
@@ -505,341 +523,5 @@
       "Blinding Lights"
     ],
     "scanCount": 74
-  },
-  {
-    "userId": "user-013",
-    "displayName": "Skyler H",
-    "location": "London",
-    "vector": [
-      113.0,
-      0.46,
-      0.71,
-      0.47,
-      0.41
-    ],
-    "topMicroGenres": [
-      "Neo-Soul",
-      "Dark R&B",
-      "Hard Trap"
-    ],
-    "topArtists": [
-      "Drake",
-      "SZA",
-      "Daft Punk"
-    ],
-    "topSongs": [
-      "bad guy",
-      "Starboy",
-      "HUMBLE."
-    ],
-    "scanCount": 79
-  },
-  {
-    "userId": "user-014",
-    "displayName": "Reese C",
-    "location": "Paris",
-    "vector": [
-      112.2,
-      0.53,
-      0.57,
-      0.44,
-      0.68
-    ],
-    "topMicroGenres": [
-      "Electronic",
-      "Hard Trap",
-      "Hyperpop"
-    ],
-    "topArtists": [
-      "SZA",
-      "Tyler the Creator",
-      "Daft Punk"
-    ],
-    "topSongs": [
-      "bad guy",
-      "Nights",
-      "EARFQUAKE"
-    ],
-    "scanCount": 77
-  },
-  {
-    "userId": "user-015",
-    "displayName": "Finley D",
-    "location": "Toronto",
-    "vector": [
-      110.4,
-      0.49,
-      0.49,
-      0.32,
-      0.78
-    ],
-    "topMicroGenres": [
-      "Hyperpop",
-      "Electronic",
-      "Indie Folk"
-    ],
-    "topArtists": [
-      "Tyler the Creator",
-      "Daft Punk",
-      "SZA"
-    ],
-    "topSongs": [
-      "Starboy",
-      "Nights",
-      "God's Plan"
-    ],
-    "scanCount": 36
-  },
-  {
-    "userId": "user-016",
-    "displayName": "Rowan G",
-    "location": "Paris",
-    "vector": [
-      134.1,
-      0.79,
-      0.74,
-      0.46,
-      0.69
-    ],
-    "topMicroGenres": [
-      "Bedroom Pop",
-      "Jersey Club",
-      "Neo-Soul"
-    ],
-    "topArtists": [
-      "The Weeknd",
-      "SZA",
-      "Billie Eilish"
-    ],
-    "topSongs": [
-      "Blinding Lights",
-      "bad guy",
-      "Nights"
-    ],
-    "scanCount": 20
-  },
-  {
-    "userId": "user-017",
-    "displayName": "Peyton V",
-    "location": "Berlin",
-    "vector": [
-      121.3,
-      0.21,
-      0.12,
-      0.08,
-      0.55
-    ],
-    "topMicroGenres": [
-      "Hyperpop",
-      "Indie Folk",
-      "Neo-Soul"
-    ],
-    "topArtists": [
-      "Kendrick Lamar",
-      "Daft Punk",
-      "Frank Ocean"
-    ],
-    "topSongs": [
-      "bad guy",
-      "Blinding Lights",
-      "Starboy"
-    ],
-    "scanCount": 8
-  },
-  {
-    "userId": "user-018",
-    "displayName": "Sage O",
-    "location": "Los Angeles",
-    "vector": [
-      79.5,
-      0.31,
-      0.41,
-      0.09,
-      0.33
-    ],
-    "topMicroGenres": [
-      "Hard Trap",
-      "Electronic",
-      "Bedroom Pop"
-    ],
-    "topArtists": [
-      "Billie Eilish",
-      "SZA",
-      "Drake"
-    ],
-    "topSongs": [
-      "God's Plan",
-      "Kill Bill",
-      "Nights"
-    ],
-    "scanCount": 63
-  },
-  {
-    "userId": "user-019",
-    "displayName": "River Z",
-    "location": "New York",
-    "vector": [
-      159.8,
-      0.34,
-      0.1,
-      0.07,
-      0.28
-    ],
-    "topMicroGenres": [
-      "Jersey Club",
-      "Indie Folk",
-      "Electronic"
-    ],
-    "topArtists": [
-      "Daft Punk",
-      "Drake",
-      "Billie Eilish"
-    ],
-    "topSongs": [
-      "God's Plan",
-      "Blinding Lights",
-      "EARFQUAKE"
-    ],
-    "scanCount": 35
-  },
-  {
-    "userId": "user-020",
-    "displayName": "Phoenix Y",
-    "location": "Berlin",
-    "vector": [
-      167.2,
-      0.41,
-      0.22,
-      0.41,
-      0.31
-    ],
-    "topMicroGenres": [
-      "Electronic",
-      "Dark R&B",
-      "Hard Trap"
-    ],
-    "topArtists": [
-      "Tyler the Creator",
-      "Billie Eilish",
-      "The Weeknd"
-    ],
-    "topSongs": [
-      "HUMBLE.",
-      "bad guy",
-      "Kill Bill"
-    ],
-    "scanCount": 12
-  },
-  {
-    "userId": "user-021",
-    "displayName": "Taylor X",
-    "location": "London",
-    "vector": [
-      71.6,
-      0.65,
-      0.6,
-      0.47,
-      0.69
-    ],
-    "topMicroGenres": [
-      "Neo-Soul",
-      "Indie Folk",
-      "Hard Trap"
-    ],
-    "topArtists": [
-      "The Weeknd",
-      "Tyler the Creator",
-      "Drake"
-    ],
-    "topSongs": [
-      "bad guy",
-      "HUMBLE.",
-      "Kill Bill"
-    ],
-    "scanCount": 33
-  },
-  {
-    "userId": "user-022",
-    "displayName": "Hayden I",
-    "location": "Montreal",
-    "vector": [
-      70.9,
-      0.2,
-      0.55,
-      0.08,
-      0.54
-    ],
-    "topMicroGenres": [
-      "Hyperpop",
-      "Dark R&B",
-      "Neo-Soul"
-    ],
-    "topArtists": [
-      "Frank Ocean",
-      "SZA",
-      "Drake"
-    ],
-    "topSongs": [
-      "Kill Bill",
-      "bad guy",
-      "God's Plan"
-    ],
-    "scanCount": 23
-  },
-  {
-    "userId": "user-023",
-    "displayName": "Emery J",
-    "location": "Toronto",
-    "vector": [
-      75.6,
-      0.58,
-      0.28,
-      0.47,
-      0.11
-    ],
-    "topMicroGenres": [
-      "Jersey Club",
-      "Bedroom Pop",
-      "Hard Trap"
-    ],
-    "topArtists": [
-      "Daft Punk",
-      "Kendrick Lamar",
-      "Frank Ocean"
-    ],
-    "topSongs": [
-      "Nights",
-      "EARFQUAKE",
-      "God's Plan"
-    ],
-    "scanCount": 25
-  },
-  {
-    "userId": "user-024",
-    "displayName": "Shiloh U",
-    "location": "Paris",
-    "vector": [
-      74.1,
-      0.36,
-      0.38,
-      0.26,
-      0.31
-    ],
-    "topMicroGenres": [
-      "Hyperpop",
-      "Hard Trap",
-      "Bedroom Pop"
-    ],
-    "topArtists": [
-      "Frank Ocean",
-      "Tyler the Creator",
-      "The Weeknd"
-    ],
-    "topSongs": [
-      "Nights",
-      "Kill Bill",
-      "God's Plan"
-    ],
-    "scanCount": 24
   }
 ]
