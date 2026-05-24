@@ -1,6 +1,412 @@
 [
   {
     "id": "track-001",
+    "title": "Devil in a New Dress",
+    "artist": "Kanye West",
+    "album": "Devil in a New Dress (Single)",
+    "albumArt": "https://picsum.photos/seed/566/300/300",
+    "tempo": 97.4,
+    "energy": 0.43,
+    "valence": 0.24,
+    "danceability": 0.79,
+    "acousticness": 0.78,
+    "instrumentalness": 0.02,
+    "speechiness": 0.27,
+    "key": 6,
+    "mode": 1,
+    "microGenre": "Hip-Hop",
+    "moodLabel": "Tense",
+    "qualitativeDescription": "Devil in a New Dress by Kanye West delivers a distinctive sonic character with compelling acoustic texture.",
+    "sonicProfile": {
+      "name": "Neo-Soul Drift",
+      "tags": [
+        "soulful",
+        "organic",
+        "textured"
+      ]
+    },
+    "location": "Seoul",
+    "scannedAt": "2026-05-24T01:18:26.081840+00:00"
+  },
+  {
+    "id": "track-002",
+    "title": "Supernatural",
+    "artist": "NewJeans",
+    "album": "Supernatural (Single)",
+    "albumArt": "https://picsum.photos/seed/863/300/300",
+    "tempo": 81.7,
+    "energy": 0.61,
+    "valence": 0.49,
+    "danceability": 0.64,
+    "acousticness": 0.5,
+    "instrumentalness": 0.4,
+    "speechiness": 0.16,
+    "key": 4,
+    "mode": 1,
+    "microGenre": "Dance",
+    "moodLabel": "Euphoric",
+    "qualitativeDescription": "Supernatural by NewJeans delivers a distinctive sonic character with compelling acoustic texture.",
+    "sonicProfile": {
+      "name": "Atmospheric Pop",
+      "tags": [
+        "cinematic",
+        "spacious",
+        "ethereal"
+      ]
+    },
+    "location": "Los Angeles",
+    "scannedAt": "2026-05-24T01:18:26.081978+00:00"
+  },
+  {
+    "id": "track-003",
+    "title": "Kills",
+    "artist": "Chief Keef",
+    "album": "Kills (Single)",
+    "albumArt": "https://picsum.photos/seed/79/300/300",
+    "tempo": 112.4,
+    "energy": 0.55,
+    "valence": 0.35,
+    "danceability": 0.83,
+    "acousticness": 0.04,
+    "instrumentalness": 0.2,
+    "speechiness": 0.37,
+    "key": 7,
+    "mode": 1,
+    "microGenre": "Dance",
+    "moodLabel": "Uplifting",
+    "qualitativeDescription": "Kills by Chief Keef delivers a distinctive sonic character with compelling acoustic texture.",
+    "sonicProfile": {
+      "name": "Atmospheric Pop",
+      "tags": [
+        "cinematic",
+        "spacious",
+        "ethereal"
+      ]
+    },
+    "location": "Seoul",
+    "scannedAt": "2026-05-24T01:18:26.082317+00:00"
+  },
+  {
+    "id": "track-004",
+    "title": "90210",
+    "artist": "Travis Scott",
+    "album": "90210 (Single)",
+    "albumArt": "https://picsum.photos/seed/842/300/300",
+    "tempo": 121.3,
+    "energy": 0.43,
+    "valence": 0.58,
+    "danceability": 0.91,
+    "acousticness": 0.49,
+    "instrumentalness": 0.06,
+    "speechiness": 0.24,
+    "key": 11,
+    "mode": 1,
+    "microGenre": "Pop",
+    "moodLabel": "Melancholic",
+    "qualitativeDescription": "90210 by Travis Scott delivers a distinctive sonic character with compelling acoustic texture.",
+    "sonicProfile": {
+      "name": "Industrial Grime",
+      "tags": [
+        "distorted",
+        "synthetic",
+        "aggressive"
+      ]
+    },
+    "location": "Toronto",
+    "scannedAt": "2026-05-24T01:18:26.082437+00:00"
+  },
+  {
+    "id": "track-005",
+    "title": "Do the Dance",
+    "artist": "ILLIT",
+    "album": "Do the Dance (Single)",
+    "albumArt": "https://picsum.photos/seed/826/300/300",
+    "tempo": 139.3,
+    "energy": 0.46,
+    "valence": 0.41,
+    "danceability": 0.57,
+    "acousticness": 0.61,
+    "instrumentalness": 0.47,
+    "speechiness": 0.16,
+    "key": 10,
+    "mode": 1,
+    "microGenre": "R&B",
+    "moodLabel": "Uplifting",
+    "qualitativeDescription": "Do the Dance by ILLIT delivers a distinctive sonic character with compelling acoustic texture.",
+    "sonicProfile": {
+      "name": "Indie Folk",
+      "tags": [
+        "acoustic",
+        "intimate",
+        "natural"
+      ]
+    },
+    "location": "Los Angeles",
+    "scannedAt": "2026-05-24T01:18:26.082582+00:00"
+  },
+  {
+    "id": "track-006",
+    "title": "delusionalism",
+    "artist": "Mass of the Fermenting Dregs",
+    "album": "delusionalism (Single)",
+    "albumArt": "https://picsum.photos/seed/487/300/300",
+    "tempo": 165.0,
+    "energy": 0.44,
+    "valence": 0.74,
+    "danceability": 0.95,
+    "acousticness": 0.26,
+    "instrumentalness": 0.43,
+    "speechiness": 0.15,
+    "key": 6,
+    "mode": 1,
+    "microGenre": "Hip-Hop",
+    "moodLabel": "Melancholic",
+    "qualitativeDescription": "delusionalism by Mass of the Fermenting Dregs delivers a distinctive sonic character with compelling acoustic texture.",
+    "sonicProfile": {
+      "name": "Hyperpop",
+      "tags": [
+        "glitchy",
+        "maximalist",
+        "digital"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": "2026-05-24T01:18:26.082922+00:00"
+  },
+  {
+    "id": "track-007",
+    "title": "Runaway",
+    "artist": "Kanye West",
+    "album": "Runaway (Single)",
+    "albumArt": "https://picsum.photos/seed/808/300/300",
+    "tempo": 139.3,
+    "energy": 0.5,
+    "valence": 0.56,
+    "danceability": 0.93,
+    "acousticness": 0.33,
+    "instrumentalness": 0.03,
+    "speechiness": 0.15,
+    "key": 10,
+    "mode": 1,
+    "microGenre": "R&B",
+    "moodLabel": "Tense",
+    "qualitativeDescription": "Runaway by Kanye West delivers a distinctive sonic character with compelling acoustic texture.",
+    "sonicProfile": {
+      "name": "Hard Trap",
+      "tags": [
+        "heavy",
+        "percussive",
+        "dark"
+      ]
+    },
+    "location": "Los Angeles",
+    "scannedAt": "2026-05-24T01:18:26.083019+00:00"
+  },
+  {
+    "id": "track-008",
+    "title": "Flashing Lights",
+    "artist": "Kanye West",
+    "album": "Flashing Lights (Single)",
+    "albumArt": "https://picsum.photos/seed/296/300/300",
+    "tempo": 111.9,
+    "energy": 0.99,
+    "valence": 0.49,
+    "danceability": 0.78,
+    "acousticness": 0.54,
+    "instrumentalness": 0.26,
+    "speechiness": 0.21,
+    "key": 9,
+    "mode": 1,
+    "microGenre": "Electronic",
+    "moodLabel": "Aggressive",
+    "qualitativeDescription": "Flashing Lights by Kanye West delivers a distinctive sonic character with compelling acoustic texture.",
+    "sonicProfile": {
+      "name": "Atmospheric Pop",
+      "tags": [
+        "cinematic",
+        "spacious",
+        "ethereal"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": "2026-05-24T01:18:26.083112+00:00"
+  },
+  {
+    "id": "track-009",
+    "title": "Hotline Bling",
+    "artist": "Drake",
+    "album": "Hotline Bling (Single)",
+    "albumArt": "https://picsum.photos/seed/944/300/300",
+    "tempo": 139.0,
+    "energy": 0.71,
+    "valence": 0.85,
+    "danceability": 0.75,
+    "acousticness": 0.21,
+    "instrumentalness": 0.08,
+    "speechiness": 0.08,
+    "key": 10,
+    "mode": 1,
+    "microGenre": "Hip-Hop",
+    "moodLabel": "Uplifting",
+    "qualitativeDescription": "Hotline Bling by Drake delivers a distinctive sonic character with compelling acoustic texture.",
+    "sonicProfile": {
+      "name": "Hyperpop",
+      "tags": [
+        "glitchy",
+        "maximalist",
+        "digital"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": "2026-05-24T01:18:26.083204+00:00"
+  },
+  {
+    "id": "track-010",
+    "title": "Passionfruit",
+    "artist": "Drake",
+    "album": "Passionfruit (Single)",
+    "albumArt": "https://picsum.photos/seed/435/300/300",
+    "tempo": 131.1,
+    "energy": 0.34,
+    "valence": 0.29,
+    "danceability": 0.89,
+    "acousticness": 0.75,
+    "instrumentalness": 0.18,
+    "speechiness": 0.32,
+    "key": 4,
+    "mode": 1,
+    "microGenre": "R&B",
+    "moodLabel": "Uplifting",
+    "qualitativeDescription": "Passionfruit by Drake delivers a distinctive sonic character with compelling acoustic texture.",
+    "sonicProfile": {
+      "name": "Industrial Grime",
+      "tags": [
+        "distorted",
+        "synthetic",
+        "aggressive"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": "2026-05-24T01:18:26.083307+00:00"
+  },
+  {
+    "id": "track-011",
+    "title": "Ditto",
+    "artist": "NewJeans",
+    "album": "Ditto (Single)",
+    "albumArt": "https://picsum.photos/seed/753/300/300",
+    "tempo": 115.4,
+    "energy": 0.68,
+    "valence": 0.9,
+    "danceability": 0.95,
+    "acousticness": 0.15,
+    "instrumentalness": 0.17,
+    "speechiness": 0.11,
+    "key": 5,
+    "mode": 1,
+    "microGenre": "Hip-Hop",
+    "moodLabel": "Tense",
+    "qualitativeDescription": "Ditto by NewJeans delivers a distinctive sonic character with compelling acoustic texture.",
+    "sonicProfile": {
+      "name": "Neo-Soul Drift",
+      "tags": [
+        "soulful",
+        "organic",
+        "textured"
+      ]
+    },
+    "location": "Los Angeles",
+    "scannedAt": "2026-05-24T01:18:26.083403+00:00"
+  },
+  {
+    "id": "track-012",
+    "title": "Hype Boy",
+    "artist": "NewJeans",
+    "album": "Hype Boy (Single)",
+    "albumArt": "https://picsum.photos/seed/338/300/300",
+    "tempo": 103.6,
+    "energy": 0.72,
+    "valence": 0.47,
+    "danceability": 0.57,
+    "acousticness": 0.23,
+    "instrumentalness": 0.25,
+    "speechiness": 0.04,
+    "key": 8,
+    "mode": 1,
+    "microGenre": "Electronic",
+    "moodLabel": "Chill",
+    "qualitativeDescription": "Hype Boy by NewJeans delivers a distinctive sonic character with compelling acoustic texture.",
+    "sonicProfile": {
+      "name": "Meridian Club",
+      "tags": [
+        "driving",
+        "rhythmic",
+        "electronic"
+      ]
+    },
+    "location": "Montreal",
+    "scannedAt": "2026-05-24T01:18:26.083479+00:00"
+  },
+  {
+    "id": "track-013",
+    "title": "Perfect Night",
+    "artist": "LE SSERAFIM",
+    "album": "Perfect Night (Single)",
+    "albumArt": "https://picsum.photos/seed/254/300/300",
+    "tempo": 171.2,
+    "energy": 0.95,
+    "valence": 0.35,
+    "danceability": 0.49,
+    "acousticness": 0.68,
+    "instrumentalness": 0.08,
+    "speechiness": 0.25,
+    "key": 4,
+    "mode": 1,
+    "microGenre": "Indie",
+    "moodLabel": "Tense",
+    "qualitativeDescription": "Perfect Night by LE SSERAFIM delivers a distinctive sonic character with compelling acoustic texture.",
+    "sonicProfile": {
+      "name": "Indie Folk",
+      "tags": [
+        "acoustic",
+        "intimate",
+        "natural"
+      ]
+    },
+    "location": "Toronto",
+    "scannedAt": "2026-05-24T01:18:26.083563+00:00"
+  },
+  {
+    "id": "track-014",
+    "title": "ANTIFRAGILE",
+    "artist": "LE SSERAFIM",
+    "album": "ANTIFRAGILE (Single)",
+    "albumArt": "https://picsum.photos/seed/888/300/300",
+    "tempo": 142.9,
+    "energy": 0.93,
+    "valence": 0.29,
+    "danceability": 0.74,
+    "acousticness": 0.11,
+    "instrumentalness": 0.12,
+    "speechiness": 0.31,
+    "key": 1,
+    "mode": 1,
+    "microGenre": "Indie",
+    "moodLabel": "Euphoric",
+    "qualitativeDescription": "ANTIFRAGILE by LE SSERAFIM delivers a distinctive sonic character with compelling acoustic texture.",
+    "sonicProfile": {
+      "name": "Euphoric Rave",
+      "tags": [
+        "energetic",
+        "euphoric",
+        "synthetic"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": "2026-05-24T01:18:26.083646+00:00"
+  },
+  {
+    "id": "track-001",
     "title": "Blinding Lights",
     "artist": "The Weeknd",
     "album": "Blinding Lights (Single)",
@@ -172,411 +578,5 @@
     },
     "location": "Montreal",
     "scannedAt": "2026-05-24T00:57:25.092296+00:00"
-  },
-  {
-    "id": "track-007",
-    "title": "Montero",
-    "artist": "Lil Nas X",
-    "album": "Montero (Single)",
-    "albumArt": "https://picsum.photos/seed/7/300/300",
-    "tempo": 166.2,
-    "energy": 0.79,
-    "valence": 0.53,
-    "danceability": 0.7,
-    "acousticness": 0.04,
-    "instrumentalness": 0.43,
-    "speechiness": 0.1,
-    "key": 0,
-    "mode": 1,
-    "microGenre": "Indie",
-    "moodLabel": "Aggressive",
-    "qualitativeDescription": "Montero by Lil Nas X delivers a distinctive sonic character with compelling acoustic texture.",
-    "sonicProfile": {
-      "name": "Neo-Soul Drift",
-      "tags": [
-        "soulful",
-        "organic",
-        "textured"
-      ]
-    },
-    "location": "Montreal",
-    "scannedAt": "2026-05-24T00:57:25.092404+00:00"
-  },
-  {
-    "id": "track-008",
-    "title": "drivers license",
-    "artist": "Olivia Rodrigo",
-    "album": "drivers license (Single)",
-    "albumArt": "https://picsum.photos/seed/8/300/300",
-    "tempo": 139.1,
-    "energy": 0.49,
-    "valence": 0.54,
-    "danceability": 0.57,
-    "acousticness": 0.23,
-    "instrumentalness": 0.32,
-    "speechiness": 0.09,
-    "key": 6,
-    "mode": 1,
-    "microGenre": "Dance",
-    "moodLabel": "Melancholic",
-    "qualitativeDescription": "drivers license by Olivia Rodrigo delivers a distinctive sonic character with compelling acoustic texture.",
-    "sonicProfile": {
-      "name": "Indie Folk",
-      "tags": [
-        "acoustic",
-        "intimate",
-        "natural"
-      ]
-    },
-    "location": "Montreal",
-    "scannedAt": "2026-05-24T00:57:25.092507+00:00"
-  },
-  {
-    "id": "track-009",
-    "title": "Stay",
-    "artist": "The Kid LAROI",
-    "album": "Stay (Single)",
-    "albumArt": "https://picsum.photos/seed/9/300/300",
-    "tempo": 151.6,
-    "energy": 0.35,
-    "valence": 0.64,
-    "danceability": 0.66,
-    "acousticness": 0.44,
-    "instrumentalness": 0.49,
-    "speechiness": 0.36,
-    "key": 7,
-    "mode": 1,
-    "microGenre": "Pop",
-    "moodLabel": "Melancholic",
-    "qualitativeDescription": "Stay by The Kid LAROI delivers a distinctive sonic character with compelling acoustic texture.",
-    "sonicProfile": {
-      "name": "Hard Trap",
-      "tags": [
-        "heavy",
-        "percussive",
-        "dark"
-      ]
-    },
-    "location": "Montreal",
-    "scannedAt": "2026-05-24T00:57:25.092602+00:00"
-  },
-  {
-    "id": "track-010",
-    "title": "Good 4 U",
-    "artist": "Olivia Rodrigo",
-    "album": "Good 4 U (Single)",
-    "albumArt": "https://picsum.photos/seed/10/300/300",
-    "tempo": 147.1,
-    "energy": 0.97,
-    "valence": 0.3,
-    "danceability": 0.89,
-    "acousticness": 0.72,
-    "instrumentalness": 0.36,
-    "speechiness": 0.26,
-    "key": 10,
-    "mode": 1,
-    "microGenre": "Hip-Hop",
-    "moodLabel": "Euphoric",
-    "qualitativeDescription": "Good 4 U by Olivia Rodrigo delivers a distinctive sonic character with compelling acoustic texture.",
-    "sonicProfile": {
-      "name": "Atmospheric Pop",
-      "tags": [
-        "cinematic",
-        "spacious",
-        "ethereal"
-      ]
-    },
-    "location": "Montreal",
-    "scannedAt": "2026-05-24T00:57:25.092704+00:00"
-  },
-  {
-    "id": "track-011",
-    "title": "Industry Baby",
-    "artist": "Lil Nas X",
-    "album": "Industry Baby (Single)",
-    "albumArt": "https://picsum.photos/seed/11/300/300",
-    "tempo": 120.1,
-    "energy": 0.44,
-    "valence": 0.76,
-    "danceability": 0.86,
-    "acousticness": 0.12,
-    "instrumentalness": 0.36,
-    "speechiness": 0.12,
-    "key": 10,
-    "mode": 1,
-    "microGenre": "Indie",
-    "moodLabel": "Uplifting",
-    "qualitativeDescription": "Industry Baby by Lil Nas X delivers a distinctive sonic character with compelling acoustic texture.",
-    "sonicProfile": {
-      "name": "Meridian Club",
-      "tags": [
-        "driving",
-        "rhythmic",
-        "electronic"
-      ]
-    },
-    "location": "Global",
-    "scannedAt": "2026-05-24T00:57:25.092803+00:00"
-  },
-  {
-    "id": "track-012",
-    "title": "Heat Waves",
-    "artist": "Glass Animals",
-    "album": "Heat Waves (Single)",
-    "albumArt": "https://picsum.photos/seed/12/300/300",
-    "tempo": 95.0,
-    "energy": 0.96,
-    "valence": 0.77,
-    "danceability": 0.33,
-    "acousticness": 0.31,
-    "instrumentalness": 0.04,
-    "speechiness": 0.12,
-    "key": 3,
-    "mode": 1,
-    "microGenre": "Electronic",
-    "moodLabel": "Uplifting",
-    "qualitativeDescription": "Heat Waves by Glass Animals delivers a distinctive sonic character with compelling acoustic texture.",
-    "sonicProfile": {
-      "name": "Hard Trap",
-      "tags": [
-        "heavy",
-        "percussive",
-        "dark"
-      ]
-    },
-    "location": "Global",
-    "scannedAt": "2026-05-24T00:57:25.092901+00:00"
-  },
-  {
-    "id": "track-013",
-    "title": "Shivers",
-    "artist": "Ed Sheeran",
-    "album": "Shivers (Single)",
-    "albumArt": "https://picsum.photos/seed/13/300/300",
-    "tempo": 159.3,
-    "energy": 0.73,
-    "valence": 0.28,
-    "danceability": 0.83,
-    "acousticness": 0.09,
-    "instrumentalness": 0.34,
-    "speechiness": 0.08,
-    "key": 3,
-    "mode": 1,
-    "microGenre": "Hip-Hop",
-    "moodLabel": "Euphoric",
-    "qualitativeDescription": "Shivers by Ed Sheeran delivers a distinctive sonic character with compelling acoustic texture.",
-    "sonicProfile": {
-      "name": "Hard Trap",
-      "tags": [
-        "heavy",
-        "percussive",
-        "dark"
-      ]
-    },
-    "location": "Global",
-    "scannedAt": "2026-05-24T00:57:25.092991+00:00"
-  },
-  {
-    "id": "track-014",
-    "title": "Take My Breath",
-    "artist": "The Weeknd",
-    "album": "Take My Breath (Single)",
-    "albumArt": "https://picsum.photos/seed/14/300/300",
-    "tempo": 125.4,
-    "energy": 0.35,
-    "valence": 0.6,
-    "danceability": 0.68,
-    "acousticness": 0.47,
-    "instrumentalness": 0.24,
-    "speechiness": 0.09,
-    "key": 4,
-    "mode": 1,
-    "microGenre": "R&B",
-    "moodLabel": "Aggressive",
-    "qualitativeDescription": "Take My Breath by The Weeknd delivers a distinctive sonic character with compelling acoustic texture.",
-    "sonicProfile": {
-      "name": "Bedroom Pop",
-      "tags": [
-        "lo-fi",
-        "intimate",
-        "warm"
-      ]
-    },
-    "location": "Global",
-    "scannedAt": "2026-05-24T00:57:25.093075+00:00"
-  },
-  {
-    "id": "track-015",
-    "title": "Ghost",
-    "artist": "Justin Bieber",
-    "album": "Ghost (Single)",
-    "albumArt": "https://picsum.photos/seed/15/300/300",
-    "tempo": 114.7,
-    "energy": 0.8,
-    "valence": 0.9,
-    "danceability": 0.7,
-    "acousticness": 0.32,
-    "instrumentalness": 0.22,
-    "speechiness": 0.18,
-    "key": 10,
-    "mode": 1,
-    "microGenre": "Pop",
-    "moodLabel": "Chill",
-    "qualitativeDescription": "Ghost by Justin Bieber delivers a distinctive sonic character with compelling acoustic texture.",
-    "sonicProfile": {
-      "name": "Industrial Grime",
-      "tags": [
-        "distorted",
-        "synthetic",
-        "aggressive"
-      ]
-    },
-    "location": "Global",
-    "scannedAt": "2026-05-24T00:57:25.093170+00:00"
-  },
-  {
-    "id": "track-016",
-    "title": "Love Story (Taylor's Version)",
-    "artist": "Taylor Swift",
-    "album": "Love Story (Taylor's Version) (Single)",
-    "albumArt": "https://picsum.photos/seed/16/300/300",
-    "tempo": 111.9,
-    "energy": 0.39,
-    "valence": 0.82,
-    "danceability": 0.67,
-    "acousticness": 0.66,
-    "instrumentalness": 0.05,
-    "speechiness": 0.24,
-    "key": 10,
-    "mode": 1,
-    "microGenre": "R&B",
-    "moodLabel": "Aggressive",
-    "qualitativeDescription": "Love Story (Taylor's Version) by Taylor Swift delivers a distinctive sonic character with compelling acoustic texture.",
-    "sonicProfile": {
-      "name": "Atmospheric Pop",
-      "tags": [
-        "cinematic",
-        "spacious",
-        "ethereal"
-      ]
-    },
-    "location": "Global",
-    "scannedAt": "2026-05-24T00:57:25.093307+00:00"
-  },
-  {
-    "id": "track-017",
-    "title": "Positions",
-    "artist": "Ariana Grande",
-    "album": "Positions (Single)",
-    "albumArt": "https://picsum.photos/seed/17/300/300",
-    "tempo": 133.3,
-    "energy": 0.82,
-    "valence": 0.83,
-    "danceability": 0.88,
-    "acousticness": 0.34,
-    "instrumentalness": 0.11,
-    "speechiness": 0.35,
-    "key": 1,
-    "mode": 1,
-    "microGenre": "R&B",
-    "moodLabel": "Melancholic",
-    "qualitativeDescription": "Positions by Ariana Grande delivers a distinctive sonic character with compelling acoustic texture.",
-    "sonicProfile": {
-      "name": "Indie Folk",
-      "tags": [
-        "acoustic",
-        "intimate",
-        "natural"
-      ]
-    },
-    "location": "Global",
-    "scannedAt": "2026-05-24T00:57:25.093447+00:00"
-  },
-  {
-    "id": "track-018",
-    "title": "Dynamite",
-    "artist": "BTS",
-    "album": "Dynamite (Single)",
-    "albumArt": "https://picsum.photos/seed/18/300/300",
-    "tempo": 88.7,
-    "energy": 0.28,
-    "valence": 0.58,
-    "danceability": 0.87,
-    "acousticness": 0.32,
-    "instrumentalness": 0.29,
-    "speechiness": 0.16,
-    "key": 3,
-    "mode": 1,
-    "microGenre": "R&B",
-    "moodLabel": "Uplifting",
-    "qualitativeDescription": "Dynamite by BTS delivers a distinctive sonic character with compelling acoustic texture.",
-    "sonicProfile": {
-      "name": "Bedroom Pop",
-      "tags": [
-        "lo-fi",
-        "intimate",
-        "warm"
-      ]
-    },
-    "location": "Global",
-    "scannedAt": "2026-05-24T00:57:25.093583+00:00"
-  },
-  {
-    "id": "track-019",
-    "title": "Watermelon Sugar",
-    "artist": "Harry Styles",
-    "album": "Watermelon Sugar (Single)",
-    "albumArt": "https://picsum.photos/seed/19/300/300",
-    "tempo": 133.0,
-    "energy": 0.79,
-    "valence": 0.84,
-    "danceability": 0.63,
-    "acousticness": 0.33,
-    "instrumentalness": 0.42,
-    "speechiness": 0.08,
-    "key": 0,
-    "mode": 1,
-    "microGenre": "Electronic",
-    "moodLabel": "Chill",
-    "qualitativeDescription": "Watermelon Sugar by Harry Styles delivers a distinctive sonic character with compelling acoustic texture.",
-    "sonicProfile": {
-      "name": "Dark R&B",
-      "tags": [
-        "brooding",
-        "smooth",
-        "layered"
-      ]
-    },
-    "location": "Global",
-    "scannedAt": "2026-05-24T00:57:25.093694+00:00"
-  },
-  {
-    "id": "track-020",
-    "title": "Save Your Tears",
-    "artist": "The Weeknd",
-    "album": "Save Your Tears (Single)",
-    "albumArt": "https://picsum.photos/seed/20/300/300",
-    "tempo": 130.7,
-    "energy": 0.59,
-    "valence": 0.71,
-    "danceability": 0.49,
-    "acousticness": 0.57,
-    "instrumentalness": 0.13,
-    "speechiness": 0.38,
-    "key": 9,
-    "mode": 1,
-    "microGenre": "R&B",
-    "moodLabel": "Uplifting",
-    "qualitativeDescription": "Save Your Tears by The Weeknd delivers a distinctive sonic character with compelling acoustic texture.",
-    "sonicProfile": {
-      "name": "Industrial Grime",
-      "tags": [
-        "distorted",
-        "synthetic",
-        "aggressive"
-      ]
-    },
-    "location": "Global",
-    "scannedAt": "2026-05-24T00:57:25.093795+00:00"
   }
 ]

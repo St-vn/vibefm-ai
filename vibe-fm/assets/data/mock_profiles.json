@@ -1,5 +1,176 @@
 [
   {
+    "userId": "vip-001",
+    "displayName": "Kanye West",
+    "location": "Los Angeles",
+    "vector": [
+      88.0,
+      0.78,
+      0.12,
+      0.01,
+      0.52
+    ],
+    "topMicroGenres": [
+      "Maximalist Hip-Hop",
+      "Soul Sample",
+      "Progressive Rap"
+    ],
+    "topArtists": [
+      "Kanye West",
+      "Jay-Z",
+      "Travis Scott"
+    ],
+    "topSongs": [
+      "Devil in a New Dress",
+      "Runaway",
+      "Flashing Lights"
+    ],
+    "scanCount": 77
+  },
+  {
+    "userId": "vip-002",
+    "displayName": "Drake",
+    "location": "Toronto",
+    "vector": [
+      115.0,
+      0.55,
+      0.22,
+      0.04,
+      0.38
+    ],
+    "topMicroGenres": [
+      "Dark R&B",
+      "Pop Rap",
+      "Melodic Trap"
+    ],
+    "topArtists": [
+      "Drake",
+      "The Weeknd",
+      "Lil Wayne"
+    ],
+    "topSongs": [
+      "God's Plan",
+      "Hotline Bling",
+      "Passionfruit"
+    ],
+    "scanCount": 64
+  },
+  {
+    "userId": "vip-003",
+    "displayName": "stvn",
+    "location": "Montreal",
+    "vector": [
+      135.0,
+      0.82,
+      0.08,
+      0.15,
+      0.61
+    ],
+    "topMicroGenres": [
+      "Math Rock",
+      "Jersey Club",
+      "Alternative Hip-Hop"
+    ],
+    "topArtists": [
+      "Kanye West",
+      "NewJeans",
+      "Mass of the Fermenting Dregs"
+    ],
+    "topSongs": [
+      "delusionalism",
+      "Supernatural",
+      "90210",
+      "Devil in a New Dress",
+      "Kills",
+      "Do the Dance"
+    ],
+    "scanCount": 33
+  },
+  {
+    "userId": "vip-004",
+    "displayName": "Minji",
+    "location": "Seoul",
+    "vector": [
+      130.0,
+      0.76,
+      0.18,
+      0.02,
+      0.72
+    ],
+    "topMicroGenres": [
+      "Bedroom Pop",
+      "Jersey Club",
+      "2-Step"
+    ],
+    "topArtists": [
+      "NewJeans",
+      "ILLIT",
+      "Dua Lipa"
+    ],
+    "topSongs": [
+      "Supernatural",
+      "Ditto",
+      "Hype Boy"
+    ],
+    "scanCount": 55
+  },
+  {
+    "userId": "vip-005",
+    "displayName": "Chaewon",
+    "location": "Seoul",
+    "vector": [
+      122.0,
+      0.85,
+      0.05,
+      0.01,
+      0.78
+    ],
+    "topMicroGenres": [
+      "Dance-Pop",
+      "Afrobeats",
+      "Hyperpop"
+    ],
+    "topArtists": [
+      "LE SSERAFIM",
+      "NewJeans",
+      "Billie Eilish"
+    ],
+    "topSongs": [
+      "Perfect Night",
+      "ANTIFRAGILE",
+      "Supernatural"
+    ],
+    "scanCount": 59
+  },
+  {
+    "userId": "vip-006",
+    "displayName": "Michael Jackson",
+    "location": "Los Angeles",
+    "vector": [
+      118.0,
+      0.88,
+      0.1,
+      0.02,
+      0.85
+    ],
+    "topMicroGenres": [
+      "Pop",
+      "Funk",
+      "New Jack Swing"
+    ],
+    "topArtists": [
+      "Michael Jackson",
+      "Quincy Jones",
+      "Prince"
+    ],
+    "topSongs": [
+      "Billie Jean",
+      "Thriller",
+      "Beat It"
+    ],
+    "scanCount": 99
+  },
+  {
     "userId": "user-001",
     "displayName": "Alex M",
     "location": "Paris",
@@ -670,173 +841,5 @@
       "God's Plan"
     ],
     "scanCount": 24
-  },
-  {
-    "userId": "user-025",
-    "displayName": "Lennon E",
-    "location": "New York",
-    "vector": [
-      133.1,
-      0.5,
-      0.63,
-      0.25,
-      0.62
-    ],
-    "topMicroGenres": [
-      "Bedroom Pop",
-      "Hard Trap",
-      "Electronic"
-    ],
-    "topArtists": [
-      "Billie Eilish",
-      "Daft Punk",
-      "Drake"
-    ],
-    "topSongs": [
-      "bad guy",
-      "HUMBLE.",
-      "Kill Bill"
-    ],
-    "scanCount": 66
-  },
-  {
-    "userId": "user-026",
-    "displayName": "Harlow Q",
-    "location": "Montreal",
-    "vector": [
-      105.6,
-      0.58,
-      0.63,
-      0.15,
-      0.74
-    ],
-    "topMicroGenres": [
-      "Bedroom Pop",
-      "Hard Trap",
-      "Dark R&B"
-    ],
-    "topArtists": [
-      "Tyler the Creator",
-      "Daft Punk",
-      "Drake"
-    ],
-    "topSongs": [
-      "Nights",
-      "EARFQUAKE",
-      "HUMBLE."
-    ],
-    "scanCount": 46
-  },
-  {
-    "userId": "user-027",
-    "displayName": "Marlowe T",
-    "location": "Los Angeles",
-    "vector": [
-      149.3,
-      0.78,
-      0.22,
-      0.47,
-      0.12
-    ],
-    "topMicroGenres": [
-      "Hyperpop",
-      "Hard Trap",
-      "Dark R&B"
-    ],
-    "topArtists": [
-      "Frank Ocean",
-      "SZA",
-      "The Weeknd"
-    ],
-    "topSongs": [
-      "EARFQUAKE",
-      "Kill Bill",
-      "Nights"
-    ],
-    "scanCount": 51
-  },
-  {
-    "userId": "user-028",
-    "displayName": "Arlo N",
-    "location": "Montreal",
-    "vector": [
-      159.8,
-      0.94,
-      0.59,
-      0.28,
-      0.7
-    ],
-    "topMicroGenres": [
-      "Indie Folk",
-      "Neo-Soul",
-      "Hard Trap"
-    ],
-    "topArtists": [
-      "SZA",
-      "Drake",
-      "Frank Ocean"
-    ],
-    "topSongs": [
-      "HUMBLE.",
-      "bad guy",
-      "God's Plan"
-    ],
-    "scanCount": 37
-  },
-  {
-    "userId": "user-029",
-    "displayName": "Wren M",
-    "location": "Tokyo",
-    "vector": [
-      155.5,
-      0.95,
-      0.64,
-      0.31,
-      0.23
-    ],
-    "topMicroGenres": [
-      "Neo-Soul",
-      "Jersey Club",
-      "Electronic"
-    ],
-    "topArtists": [
-      "Tyler the Creator",
-      "Kendrick Lamar",
-      "Daft Punk"
-    ],
-    "topSongs": [
-      "HUMBLE.",
-      "bad guy",
-      "EARFQUAKE"
-    ],
-    "scanCount": 48
-  },
-  {
-    "userId": "user-030",
-    "displayName": "Indigo P",
-    "location": "New York",
-    "vector": [
-      126.2,
-      0.58,
-      0.65,
-      0.1,
-      0.82
-    ],
-    "topMicroGenres": [
-      "Neo-Soul",
-      "Bedroom Pop",
-      "Electronic"
-    ],
-    "topArtists": [
-      "The Weeknd",
-      "Tyler the Creator",
-      "Frank Ocean"
-    ],
-    "topSongs": [
-      "Nights",
-      "bad guy",
-      "Blinding Lights"
-    ],
-    "scanCount": 77
   }
 ]
