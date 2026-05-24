@@ -1,0 +1,582 @@
+[
+  {
+    "id": "chart-montreal-01",
+    "title": "Janice STFU",
+    "artist": "Drake",
+    "album": "Janice STFU (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/39/61/7f396123-be56-bc11-eaab-976441808e58/26UMGIM63622.rgb.jpg/300x300bb.jpg",
+    "tempo": 126.06,
+    "energy": 0.852915,
+    "valence": 0.4654,
+    "danceability": 0.8345,
+    "acousticness": 0.978,
+    "instrumentalness": 0.2618,
+    "speechiness": 0.386,
+    "key": "C#-Minor",
+    "mode": 1,
+    "microGenre": "hip-hop",
+    "moodLabel": "energetic",
+    "qualitativeDescription": "This track is a brooding, yet intimate sonic journey, blending the smooth, layered textures reminiscent of Dark R&B with a surprising touch of Bedroom Pop's lo-fi warmth. The acoustic elements give it a natural, soulful feel, making for a sophisticated and emotionally resonant sound.",
+    "sonicProfile": {
+      "name": "Dark R&B",
+      "tags": [
+        "brooding",
+        "smooth",
+        "layered"
+      ]
+    },
+    "location": "Montreal",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-montreal-02",
+    "title": "National Treasures",
+    "artist": "Drake",
+    "album": "National Treasures (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/39/61/7f396123-be56-bc11-eaab-976441808e58/26UMGIM63622.rgb.jpg/300x300bb.jpg",
+    "tempo": 129.29,
+    "energy": 1.0,
+    "valence": 0.4971,
+    "danceability": 0.723,
+    "acousticness": 0.9804,
+    "instrumentalness": 0.1588,
+    "speechiness": 0.4451,
+    "key": "Ab-Minor",
+    "mode": 1,
+    "microGenre": "hip-hop",
+    "moodLabel": "energetic",
+    "qualitativeDescription": "This track is an energetic and driving hip-hop piece, characterized by its loud and dynamic sound. The acoustic profile suggests a synthetic and possibly aggressive quality, contributing to an overall mood of euphoria and intensity.",
+    "sonicProfile": {
+      "name": "Hard Trap",
+      "tags": [
+        "heavy",
+        "percussive",
+        "dark"
+      ]
+    },
+    "location": "Montreal",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-montreal-03",
+    "title": "the cure",
+    "artist": "Olivia Rodrigo",
+    "album": "the cure (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/cc/ad/eaccad77-3cb8-ddc2-a2e1-224c409aa26b/26UMGIM64019.rgb.jpg/300x300bb.jpg",
+    "tempo": 143.5,
+    "energy": 1.0,
+    "valence": 0.6462,
+    "danceability": 0.7615,
+    "acousticness": 0.9357,
+    "instrumentalness": 0.4983,
+    "speechiness": 0.5069,
+    "key": "C#-Major",
+    "mode": 1,
+    "microGenre": null,
+    "moodLabel": "happy",
+    "qualitativeDescription": "The song has a very high energy and danceability, combined with acoustic elements and a happy mood, creating an intimate yet energetic feel. While it leans heavily into acousticness and liveness, its high energy and danceability evoke a feeling of warmth.",
+    "sonicProfile": {
+      "name": "Bedroom Pop",
+      "tags": [
+        "lo-fi",
+        "intimate",
+        "warm"
+      ]
+    },
+    "location": "Montreal",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-montreal-04",
+    "title": "Ran To Atlanta (w/ Future , Molly Santana )",
+    "artist": "Drake",
+    "album": "Ran To Atlanta (w/ Future , Molly Santana ) (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/39/61/7f396123-be56-bc11-eaab-976441808e58/26UMGIM63622.rgb.jpg/300x300bb.jpg",
+    "tempo": 171.7,
+    "energy": 0.24,
+    "valence": 0.56,
+    "danceability": 0.61,
+    "acousticness": 0.56,
+    "instrumentalness": 0.04,
+    "speechiness": 0.1,
+    "key": 10,
+    "mode": 1,
+    "microGenre": "R&B",
+    "moodLabel": "Aggressive",
+    "qualitativeDescription": "This track leans towards a raw and shadowy atmosphere, reminiscent of the darker corners of R&B. The acoustic data suggests a certain urgency and a blend of emotional intensity with its moderate tempo and engaging rhythms.",
+    "sonicProfile": {
+      "name": "Dark R&B",
+      "tags": [
+        "brooding",
+        "smooth",
+        "layered"
+      ]
+    },
+    "location": "Montreal",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-montreal-05",
+    "title": "Whisper My Name",
+    "artist": "Drake",
+    "album": "Whisper My Name (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/39/61/7f396123-be56-bc11-eaab-976441808e58/26UMGIM63622.rgb.jpg/300x300bb.jpg",
+    "tempo": 123.96,
+    "energy": 0.648342,
+    "valence": 0.4187,
+    "danceability": 0.775,
+    "acousticness": 0.9766,
+    "instrumentalness": 0.0,
+    "speechiness": 0.4004,
+    "key": "B-Minor",
+    "mode": 1,
+    "microGenre": "hip-hop/rap",
+    "moodLabel": "tense",
+    "qualitativeDescription": "This track features a sonic texture dominated by acoustic elements, suggesting a raw and intimate feel. Despite the acoustic presence, there is an underlying tension conveyed through its emotional character, possibly created by the vocal delivery or subtle instrumentation. This blend points towards a sound that is both personal and somewhat unsettling.",
+    "sonicProfile": {
+      "name": "Indie Folk",
+      "tags": [
+        "acoustic",
+        "intimate",
+        "natural"
+      ]
+    },
+    "location": "Montreal",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-montreal-06",
+    "title": "Shabang",
+    "artist": "Drake",
+    "album": "Shabang (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/39/61/7f396123-be56-bc11-eaab-976441808e58/26UMGIM63622.rgb.jpg/300x300bb.jpg",
+    "tempo": 117.21,
+    "energy": 1.0,
+    "valence": 0.488,
+    "danceability": 0.8232,
+    "acousticness": 0.929,
+    "instrumentalness": 0.0,
+    "speechiness": 0.5824,
+    "key": "Ab-Minor",
+    "mode": 1,
+    "microGenre": null,
+    "moodLabel": "energetic",
+    "qualitativeDescription": "This track showcases an intimate and natural sonic texture, evoking a warm and earthy emotional character. Its acoustic nature, combined with a lo-fi aesthetic, creates a sense of closeness and authenticity, perfect for reflective listening.",
+    "sonicProfile": {
+      "name": "Indie Folk",
+      "tags": [
+        "acoustic",
+        "intimate",
+        "natural"
+      ]
+    },
+    "location": "Montreal",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-montreal-07",
+    "title": "Choosin' Texas",
+    "artist": "Ella Langley",
+    "album": "Choosin' Texas (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e2/91/4d/e2914d0a-7f1d-f04c-fbf4-c50b38548838/196873638690.jpg/300x300bb.jpg",
+    "tempo": 112.0,
+    "energy": 0.940955,
+    "valence": 0.5688,
+    "danceability": 0.8278,
+    "acousticness": 0.9941,
+    "instrumentalness": 0.2618,
+    "speechiness": 0.3909,
+    "key": "C#-Major",
+    "mode": 1,
+    "microGenre": "country",
+    "moodLabel": "happy",
+    "qualitativeDescription": "The song has a very intimate, natural and acoustic sound, with a clear warmth in its production. Its high energy and danceability are balanced by its folk roots, creating a vibrant yet grounded emotional character.",
+    "sonicProfile": {
+      "name": "Indie Folk",
+      "tags": [
+        "acoustic",
+        "intimate",
+        "natural"
+      ]
+    },
+    "location": "Montreal",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-montreal-08",
+    "title": "2 Hard 4 The Radio",
+    "artist": "Drake",
+    "album": "2 Hard 4 The Radio (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/39/61/7f396123-be56-bc11-eaab-976441808e58/26UMGIM63622.rgb.jpg/300x300bb.jpg",
+    "tempo": 105.63,
+    "energy": 0.893279,
+    "valence": 0.5546,
+    "danceability": 0.8068,
+    "acousticness": 0.9527,
+    "instrumentalness": 0.0,
+    "speechiness": 0.3525,
+    "key": "G-Major",
+    "mode": 1,
+    "microGenre": "hip-hop/rap",
+    "moodLabel": "happy",
+    "qualitativeDescription": "This track possesses a surprising sonic texture given the artist, leaning heavily into a warm and intimate acoustic vibe. The emotional character feels reflective and heartfelt, standing in stark contrast to typical 'radio' expectations.",
+    "sonicProfile": {
+      "name": "Indie Folk",
+      "tags": [
+        "acoustic",
+        "intimate",
+        "natural"
+      ]
+    },
+    "location": "Montreal",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-montreal-09",
+    "title": "Plot Twist",
+    "artist": "Drake",
+    "album": "Plot Twist (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/39/61/7f396123-be56-bc11-eaab-976441808e58/26UMGIM63622.rgb.jpg/300x300bb.jpg",
+    "tempo": 123.06,
+    "energy": 0.814679,
+    "valence": 0.5743,
+    "danceability": 0.7364,
+    "acousticness": 0.9469,
+    "instrumentalness": 0.0,
+    "speechiness": 0.4474,
+    "key": "Ab-Major",
+    "mode": 1,
+    "microGenre": "hip-hop/rap",
+    "moodLabel": "happy",
+    "qualitativeDescription": "Plot Twist by Drake exhibits a captivating sonic texture, blending synthetic elements with a brooding atmosphere. The emotional character leans towards introspection, with a smooth and layered sound that invites deep listening.",
+    "sonicProfile": {
+      "name": "Dark R&B",
+      "tags": [
+        "brooding",
+        "smooth",
+        "layered"
+      ]
+    },
+    "location": "Montreal",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-montreal-10",
+    "title": "Dust",
+    "artist": "Drake",
+    "album": "Dust (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/39/61/7f396123-be56-bc11-eaab-976441808e58/26UMGIM63622.rgb.jpg/300x300bb.jpg",
+    "tempo": 137.99,
+    "energy": 1.0,
+    "valence": 0.6469,
+    "danceability": 0.7579,
+    "acousticness": 0.9232,
+    "instrumentalness": 0.0,
+    "speechiness": 0.5112,
+    "key": "Eb-Major",
+    "mode": 1,
+    "microGenre": "hip-hop/rap",
+    "moodLabel": "happy",
+    "qualitativeDescription": "This track possesses a cinematic and expansive sonic texture, creating an ethereal and atmospheric feel. The high acousticness suggests a natural, organic sound, which, when combined with the overall mood, evokes a happy and airy emotional character.",
+    "sonicProfile": {
+      "name": "Atmospheric Pop",
+      "tags": [
+        "cinematic",
+        "spacious",
+        "ethereal"
+      ]
+    },
+    "location": "Montreal",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-global-01",
+    "title": "the cure",
+    "artist": "Olivia Rodrigo",
+    "album": "the cure (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/ea/cc/ad/eaccad77-3cb8-ddc2-a2e1-224c409aa26b/26UMGIM64019.rgb.jpg/300x300bb.jpg",
+    "tempo": 143.5,
+    "energy": 1.0,
+    "valence": 0.6462,
+    "danceability": 0.7615,
+    "acousticness": 0.9357,
+    "instrumentalness": 0.4983,
+    "speechiness": 0.5069,
+    "key": "C#-Major",
+    "mode": 1,
+    "microGenre": null,
+    "moodLabel": "happy",
+    "qualitativeDescription": "This track possesses a rich, intimate sonic texture characterized by its acoustic and organic elements, likely featuring prominent instrumentation that evokes a sense of natural warmth. The emotional character is predominantly happy, infused with a lively energy that promotes dancing, suggesting an uplifting and engaging listening experience.",
+    "sonicProfile": {
+      "name": "Indie Folk",
+      "tags": [
+        "acoustic",
+        "intimate",
+        "natural"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-global-02",
+    "title": "Billie Jean",
+    "artist": "Michael Jackson",
+    "album": "Billie Jean (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/300x300bb.jpg",
+    "tempo": 117.46,
+    "energy": 0.786673,
+    "valence": 0.4518,
+    "danceability": 0.8412,
+    "acousticness": 0.963,
+    "instrumentalness": 0.0832,
+    "speechiness": 0.6787,
+    "key": "F#-Minor",
+    "mode": 1,
+    "microGenre": "electronic",
+    "moodLabel": "energetic",
+    "qualitativeDescription": "This track is characterized by its driving and rhythmic electronic texture, creating an energetic and danceable atmosphere. It possesses a slightly dark and brooding emotional character with a touch of soulful undertones, propelled by a strong percussive beat.",
+    "sonicProfile": {
+      "name": "Meridian Club",
+      "tags": [
+        "driving",
+        "rhythmic",
+        "electronic"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-global-03",
+    "title": "Beauty And A Beat (w/ Nicki Minaj )",
+    "artist": "Justin Bieber",
+    "album": "Beauty And A Beat (w/ Nicki Minaj ) (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/bd/89/97/bd89971c-fc5a-47dd-5e90-a433d1b9e11f/12UMGIM31898.rgb.jpg/300x300bb.jpg",
+    "tempo": 111.4,
+    "energy": 0.46,
+    "valence": 0.25,
+    "danceability": 0.86,
+    "acousticness": 0.04,
+    "instrumentalness": 0.41,
+    "speechiness": 0.22,
+    "key": 2,
+    "mode": 1,
+    "microGenre": "R&B",
+    "moodLabel": "Uplifting",
+    "qualitativeDescription": "This track carries a driving, energetic feel with a prominent rhythmic electronic pulse. Despite its high danceability, it exhibits a relatively low valence, suggesting an energetic yet not overtly joyful or bright emotional character. The high speechiness further hints at a vocal-centric and dynamic delivery.",
+    "sonicProfile": {
+      "name": "Meridian Club",
+      "tags": [
+        "driving",
+        "rhythmic",
+        "electronic"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-global-04",
+    "title": "Janice STFU",
+    "artist": "Drake",
+    "album": "Janice STFU (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/39/61/7f396123-be56-bc11-eaab-976441808e58/26UMGIM63622.rgb.jpg/300x300bb.jpg",
+    "tempo": 126.06,
+    "energy": 0.852915,
+    "valence": 0.4654,
+    "danceability": 0.8345,
+    "acousticness": 0.978,
+    "instrumentalness": 0.2618,
+    "speechiness": 0.386,
+    "key": "C#-Minor",
+    "mode": 1,
+    "microGenre": "hip-hop",
+    "moodLabel": "energetic",
+    "qualitativeDescription": "This track features a heavy, percussive, and dark soundscape, contributing to an overall aggressive and driving feel. Despite the presence of acoustic and intimate elements, the dominant character is one of energetic, almost industrial grime, with touches of synthetic and distorted sounds.",
+    "sonicProfile": {
+      "name": "Industrial Grime",
+      "tags": [
+        "distorted",
+        "synthetic",
+        "aggressive"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-global-05",
+    "title": "SWIM",
+    "artist": "BTS",
+    "album": "SWIM (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/e0/a2/b4/e0a2b443-7969-b57a-a591-cb6172c10aa7/198704943959_Cover.jpg/300x300bb.jpg",
+    "tempo": 94.16,
+    "energy": 1.0,
+    "valence": 0.4502,
+    "danceability": 0.7264,
+    "acousticness": 0.9922,
+    "instrumentalness": 0.2061,
+    "speechiness": 0.53,
+    "key": "C#-Minor",
+    "mode": 1,
+    "microGenre": "swim",
+    "moodLabel": "energetic",
+    "qualitativeDescription": "SWIM by BTS, with an upbeat tempo and high energy, delivers an energetic and highly acoustic sonic texture. The track, despite its instrumental elements, maintains a noticeable speechiness, adding to its dynamic and expressive character.",
+    "sonicProfile": {
+      "name": "Euphoric Rave",
+      "tags": [
+        "energetic",
+        "euphoric",
+        "synthetic"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-global-06",
+    "title": "Babydoll",
+    "artist": "Dominic Fike",
+    "album": "Babydoll (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/2d/37/18/2d3718e9-8620-b603-d3cc-f34ce817070d/886447290170.jpg/300x300bb.jpg",
+    "tempo": 83.97,
+    "energy": 0.839983,
+    "valence": 0.3975,
+    "danceability": 0.6503,
+    "acousticness": 0.9945,
+    "instrumentalness": 0.02,
+    "speechiness": 0.4772,
+    "key": "A-Minor",
+    "mode": 1,
+    "microGenre": "chill",
+    "moodLabel": "tense",
+    "qualitativeDescription": "This track features a lo-fi and intimate acoustic sound, characterized by a smooth and organic texture. The overall emotional character is melancholic yet intimate.",
+    "sonicProfile": {
+      "name": "Indie Folk",
+      "tags": [
+        "acoustic",
+        "intimate",
+        "natural"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-global-07",
+    "title": "Beat It",
+    "artist": "Michael Jackson",
+    "album": "Beat It (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/300x300bb.jpg",
+    "tempo": 138.97,
+    "energy": 0.825621,
+    "valence": 0.4891,
+    "danceability": 0.7904,
+    "acousticness": 0.9786,
+    "instrumentalness": 0.3026,
+    "speechiness": 0.6848,
+    "key": "Eb-Minor",
+    "mode": 1,
+    "microGenre": "pop",
+    "moodLabel": "energetic",
+    "qualitativeDescription": "Despite being an iconic pop track, a closer listen to 'Beat It' by Michael Jackson reveals an intriguing blend of energetic pop with a subtly dark and industrial undertone. The driving beat and powerful vocals are complemented by textured, almost gritty synthetic elements, creating a sound that is both highly danceable and imbued with a sense of underlying tension. This particular acoustic analysis, however, also suggests an unexpected high acousticness, which may point to specific production choices that give certain instrumental layers a more 'natural' or 'unprocessed' feel even within a synthetic soundscape.",
+    "sonicProfile": {
+      "name": "Meridian Club",
+      "tags": [
+        "driving",
+        "rhythmic",
+        "electronic"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-global-08",
+    "title": "drop dead",
+    "artist": "Olivia Rodrigo",
+    "album": "drop dead (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/1d/1b/f9/1d1bf9b1-44c6-9a6c-6ffb-c158488c06ce/26UMGIM39303.rgb.jpg/300x300bb.jpg",
+    "tempo": 130.12,
+    "energy": 0.831723,
+    "valence": 0.5817,
+    "danceability": 0.7915,
+    "acousticness": 0.9931,
+    "instrumentalness": 0.3218,
+    "speechiness": 0.4734,
+    "key": "Ab-Major",
+    "mode": 1,
+    "microGenre": "pop rock",
+    "moodLabel": "happy",
+    "qualitativeDescription": "This track showcases a blend of raw acoustic elements, particularly a very high acousticness rating, with a relatively high energy and danceability. Despite the energetic and danceable feel, the mood is still categorized as happy, suggesting a bright and lively sonic texture.",
+    "sonicProfile": {
+      "name": "Indie Folk",
+      "tags": [
+        "acoustic",
+        "intimate",
+        "natural"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-global-09",
+    "title": "National Treasures",
+    "artist": "Drake",
+    "album": "National Treasures (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/7f/39/61/7f396123-be56-bc11-eaab-976441808e58/26UMGIM63622.rgb.jpg/300x300bb.jpg",
+    "tempo": 129.29,
+    "energy": 1.0,
+    "valence": 0.4971,
+    "danceability": 0.723,
+    "acousticness": 0.9804,
+    "instrumentalness": 0.1588,
+    "speechiness": 0.4451,
+    "key": "Ab-Minor",
+    "mode": 1,
+    "microGenre": "hip-hop",
+    "moodLabel": "energetic",
+    "qualitativeDescription": "This track leans into a very energetic and synthetic sound, likely characterized by the driving rhythmic elements found in club music, but with an added euphoric, almost ravey quality. The high danceability and energy, combined with the energetic mood, suggest a strong and powerful sonic landscape.",
+    "sonicProfile": {
+      "name": "Meridian Club",
+      "tags": [
+        "driving",
+        "rhythmic",
+        "electronic"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": ""
+  },
+  {
+    "id": "chart-global-10",
+    "title": "Earrings",
+    "artist": "Malcolm Todd",
+    "album": "Earrings (Single)",
+    "albumArt": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/d0/06/1f/d0061f04-bcae-f9a1-8126-830c04fa32db/196871971188.jpg/300x300bb.jpg",
+    "tempo": 161.94,
+    "energy": 0.804116,
+    "valence": 0.5119,
+    "danceability": 0.5658,
+    "acousticness": 0.9945,
+    "instrumentalness": 0.1498,
+    "speechiness": 0.4703,
+    "key": "Eb-Minor",
+    "mode": 1,
+    "microGenre": "pop",
+    "moodLabel": "energetic",
+    "qualitativeDescription": "This track possesses a raw and natural sonic texture with prominent acoustic elements. The emotional character is one of intimacy and warmth, creating a sense of closeness with the listener.",
+    "sonicProfile": {
+      "name": "Indie Folk",
+      "tags": [
+        "acoustic",
+        "intimate",
+        "natural"
+      ]
+    },
+    "location": "Global",
+    "scannedAt": ""
+  }
+]
