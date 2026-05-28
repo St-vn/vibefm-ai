@@ -4,6 +4,12 @@
     "slug": "vibe-fm",
     "version": "1.0.0",
     "scheme": "vibefm",
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    },
+    "updates": {
+      "url": "https://u.expo.dev/634077a0-fb80-46c8-ba0a-070dc0e4fb5e"
+    },
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
@@ -30,7 +36,9 @@
     },
     "plugins": [
       "expo-router",
-      "expo-audio"
+      "expo-audio",
+      "expo-font",
+      "expo-asset"
     ],
     "extra": {
       "router": {},

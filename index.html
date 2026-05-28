@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="vibe.fm — Audio intelligence layer for music. Identify tracks, extract acoustic fingerprints, and match with others sharing your sonic profile. Built for Hack the Mountain.">
+  <title>vibe.fm — Audio Intelligence Layer</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --void: #000000;
+      --surface: #0A0A0C;
+      --surface-elevated: #121215;
+      --fg: #F4F4F7;
+      --fg-muted: #888891;
+      --fg-dim: #3F3F46;
+      
+      /* Theme Accents */
+      --accent-purple: #9D5CFF;
+      --accent-cyan: #00E5FF;
+      --accent-green: #00F59B;
+      
+      --glass-border: rgba(255, 255, 255, 0.08);
+      --glass-shine: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      background-color: var(--void);
+      color: var(--fg);
+      font-family: 'Space Grotesk', sans-serif;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      min-height: 100vh;
+      line-height: 1.5;
+    }
+
+    code, .mono {
+      font-family: 'JetBrains Mono', monospace;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Ambient Background Glows */
+    .bg-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      filter: blur(140px);
+      z-index: 0;
+      opacity: 0.08;
+      pointer-events: none;
+    }
+    .glow-purple {
+      top: -100px;
+      right: -100px;
+      background: var(--accent-purple);
+    }
+    .glow-cyan {
+      bottom: -100px;
+      left: -100px;
+      background: var(--accent-cyan);
+    }
+
+    /* Layout Wrapper */
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 24px;
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: space-between;
+    }
+
+    /* Navigation */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--glass-border);
+    }
+    .logo {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      color: var(--fg);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .logo-dot {
+      width: 8px;
+      height: 8px;
+      background-color: var(--accent-cyan);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--accent-cyan);
+    }
+    .nav-links {
+      display: flex;
+      gap: 24px;
+    }
+    .nav-links a {
+      color: var(--fg-muted);
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+    .nav-links a:hover {
+      color: var(--fg);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 80px 0;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+    }
+    
+    @media (max-width: 850px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 40px 0;
+        gap: 40px;
+      }
+    }
+
+    .hero-content {
+      max-width: 600px;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 99px;
+      background: rgba(157, 92, 255, 0.08);
+      border: 1px solid rgba(157, 92, 255, 0.15);
+      color: var(--accent-purple);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .badge:hover {
+      background: rgba(157, 92, 255, 0.15);
+      border-color: rgba(157, 92, 255, 0.3);
+    }
+
+    h1 {
+      font-size: clamp(38px, 5vw, 64px);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+      margin-bottom: 24px;
+    }
+
+    .subtitle {
+      font-size: 18px;
+      font-weight: 300;
+      color: var(--fg-muted);
+      margin-bottom: 40px;
+      max-width: 500px;
+    }
+
+    /* Call to Action Buttons */
+    .cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent-cyan) 0%, #0284c7 100%);
+      color: var(--void);
+      box-shadow: 0 4px 20px rgba(0, 229, 255, 0.15);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(0, 229, 255, 0.3);
+    }
+
+    .btn-secondary {
+      background: transparent;
+      border: 1px solid var(--glass-border);
+      color: var(--fg);
+      box-shadow: var(--glass-shine);
+    }
+    .btn-secondary:hover {
+      border-color: var(--accent-purple);
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(157, 92, 255, 0.15);
+    }
+
+    /* App Preview / QR Code Panel */
+    .preview-panel {
+      background: var(--surface);
+      border: 1px solid var(--glass-border);
+      border-radius: 20px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      box-shadow: var(--glass-shine);
+      position: relative;
+    }
+
+    .qr-container {
+      background: #FFFFFF;
+      padding: 16px;
+      border-radius: 16px;
+      margin-bottom: 24px;
+      display: inline-block;
+    }
+    .qr-image {
+      display: block;
+      width: 200px;
+      height: 200px;
+    }
+
+    .preview-title {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .preview-desc {
+      font-size: 13px;
+      color: var(--fg-muted);
+      max-width: 250px;
+      margin-bottom: 20px;
+    }
+
+    .preview-link {
+      font-size: 12px;
+      color: var(--accent-cyan);
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .preview-link:hover {
+      text-decoration: underline;
+    }
+
+    /* Core Features Grid */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+      padding: 60px 0;
+      border-top: 1px solid var(--glass-border);
+      border-bottom: 1px solid var(--glass-border);
+    }
+
+    .feature-card {
+      background: var(--surface);
+      border: 1px solid var(--glass-border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: var(--glass-shine);
+      transition: border-color 0.2s;
+    }
+    .feature-card:hover {
+      border-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .feature-dot {
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      margin-bottom: 16px;
+    }
+    .dot-cyan { background-color: var(--accent-cyan); box-shadow: 0 0 8px var(--accent-cyan); }
+    .dot-purple { background-color: var(--accent-purple); box-shadow: 0 0 8px var(--accent-purple); }
+    .dot-green { background-color: var(--accent-green); box-shadow: 0 0 8px var(--accent-green); }
+
+    .feature-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .feature-desc {
+      font-size: 13px;
+      color: var(--fg-muted);
+      line-height: 1.4;
+    }
+
+    /* Footer */
+    footer {
+      padding: 40px 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .footer-left {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .footer-links {
+      display: flex;
+      gap: 20px;
+    }
+    .footer-links a {
+      font-size: 12px;
+      color: var(--fg-muted);
+      text-decoration: none;
+    }
+    .footer-links a:hover {
+      color: var(--fg);
+    }
+
+    .footer-meta {
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--fg-dim);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="bg-glow glow-purple"></div>
+  <div class="bg-glow glow-cyan"></div>
+
+  <div class="container">
+    
+    <!-- NAVIGATION -->
+    <header>
+      <a href="#" class="logo" id="logo-nav">
+        <span class="logo-dot"></span>
+        vibe.fm
+      </a>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="https://hackthemountain.ca/" target="_blank" rel="noopener" id="link-htm">Hack the Mountain</a>
+        <a href="https://event.hackthemountain.ca/info" target="_blank" rel="noopener" id="link-htm-info">Event Info</a>
+      </nav>
+    </header>
+
+    <!-- HERO SECTION -->
+    <main class="hero">
+      <div class="hero-content">
+        <a href="https://event.hackthemountain.ca/info" target="_blank" rel="noopener" class="badge" id="badge-hack">
+          Built for Hack the Mountain
+        </a>
+        <h1 id="hero-title">Audio intelligence layer.</h1>
+        <p class="subtitle" id="hero-subtitle">
+          Identify songs, extract quantitative acoustic metadata, and match with others sharing your sonic profile.
+        </p>
+        
+        <div class="cta-group">
+          <a href="https://vibe-fm.expo.app" class="btn btn-primary" id="btn-web-app">
+            Launch Web App
+          </a>
+          <a href="https://expo.dev/projects/634077a0-fb80-46c8-ba0a-070dc0e4fb5e/updates/6789943f-66ed-4f46-8afc-6e4726af4a69" class="btn btn-secondary" id="btn-expo-go">
+            Open in Expo Go
+          </a>
+        </div>
+      </div>
+
+      <!-- App Preview / QR Code Panel -->
+      <div class="preview-panel" id="panel-qr">
+        <div class="qr-container">
+          <!-- Dynamic QR code server generating direct mobile URL redirect to Expo Go -->
+          <img 
+            src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&color=000000&data=exp%3A%2F%2Fu.expo.dev%2F634077a0-fb80-46c8-ba0a-070dc0e4fb5e%3Fruntime-version%3Dexposdk%253A54.0.0%26channel-name%3Dproduction" 
+            alt="Scan to open vibe.fm in Expo Go" 
+            class="qr-image"
+            id="qr-code-img"
+          />
+        </div>
+        <div class="preview-title" id="qr-title">Scan on Mobile</div>
+        <p class="preview-desc" id="qr-desc">
+          Scan this QR code with your phone camera to load the mobile application directly in Expo Go.
+        </p>
+        <a href="exp://u.expo.dev/634077a0-fb80-46c8-ba0a-070dc0e4fb5e?runtime-version=exposdk%3A54.0.0&channel-name=production" class="preview-link" id="link-direct-mobile">
+          Or tap here if you are on mobile
+        </a>
+      </div>
+    </main>
+
+    <!-- CORE FEATURES -->
+    <section class="features-grid" aria-label="Key Features">
+      
+      <!-- Feature 1 -->
+      <div class="feature-card" id="card-scanner">
+        <div class="feature-dot dot-cyan"></div>
+        <div class="feature-title">Audio Scanner</div>
+        <p class="feature-desc">Identify any song instantly using low-latency live microphone capture or direct audio file upload.</p>
+      </div>
+
+      <!-- Feature 2 -->
+      <div class="feature-card" id="card-fingerprint">
+        <div class="feature-dot dot-purple"></div>
+        <div class="feature-title">Sonic Fingerprint</div>
+        <p class="feature-desc">Extract multi-dimensional acoustic vectors including energy, valence, tempo, and key/mode signature.</p>
+      </div>
+
+      <!-- Feature 3 -->
+      <div class="feature-card" id="card-matching">
+        <div class="feature-dot dot-green"></div>
+        <div class="feature-title">Acoustic Matchmaking</div>
+        <p class="feature-desc">Find compatibility matches using vector similarity matching across localized user listener profiles.</p>
+      </div>
+
+      <!-- Feature 4 -->
+      <div class="feature-card" id="card-trending">
+        <div class="feature-dot dot-cyan"></div>
+        <div class="feature-title">Trending Dashboard</div>
+        <p class="feature-desc">Explore regional trending charts showing active acoustic recipes and localized track profiles.</p>
+      </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-left">
+        <span class="footer-meta">arts + cadum mobile 2026</span>
+        <span class="footer-meta" style="color: var(--fg-muted);">not a music player</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://hackthemountain.ca/" target="_blank" rel="noopener" id="footer-link-htm">hackthemountain.ca</a>
+        <a href="https://event.hackthemountain.ca/info" target="_blank" rel="noopener" id="footer-link-info">event info</a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
