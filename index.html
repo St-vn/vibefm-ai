@@ -673,16 +673,16 @@
       }
 
       .polaroid-scene {
-        height: 380px;
+        height: 420px;
       }
 
       .polaroid-card {
-        width: 140px;
+        width: 165px;
       }
 
       /* Scale down fan-outs on smaller tablet screens */
       .visible .fingerprint-stack .card-1 {
-        transform: translate(-60px, 0) rotate(-8deg);
+        transform: translate(-80px, 0) rotate(-8deg);
       }
 
       .visible .fingerprint-stack .card-2 {
@@ -690,28 +690,28 @@
       }
 
       .visible .fingerprint-stack .card-3 {
-        transform: translate(60px, -10px) rotate(6deg);
+        transform: translate(80px, -10px) rotate(6deg);
       }
 
       .visible .matchmaker-stack .card-1 {
-        transform: translate(-80px, 10px) rotate(-10deg);
+        transform: translate(-100px, 10px) rotate(-10deg);
       }
 
       .visible .matchmaker-stack .card-2 {
-        transform: translate(-25px, -10px) rotate(-3deg);
+        transform: translate(-30px, -10px) rotate(-3deg);
       }
 
       .visible .matchmaker-stack .card-3 {
-        transform: translate(25px, 5px) rotate(4deg);
+        transform: translate(30px, 5px) rotate(4deg);
       }
 
       .visible .matchmaker-stack .card-4 {
-        transform: translate(80px, -5px) rotate(8deg);
+        transform: translate(100px, -5px) rotate(8deg);
       }
 
       /* override hover variables */
       .fingerprint-stack .card-1 {
-        --hover-x: -60px;
+        --hover-x: -80px;
         --hover-y: 0;
       }
 
@@ -721,27 +721,27 @@
       }
 
       .fingerprint-stack .card-3 {
-        --hover-x: 60px;
+        --hover-x: 80px;
         --hover-y: -10px;
       }
 
       .matchmaker-stack .card-1 {
-        --hover-x: -80px;
+        --hover-x: -100px;
         --hover-y: 10px;
       }
 
       .matchmaker-stack .card-2 {
-        --hover-x: -25px;
+        --hover-x: -30px;
         --hover-y: -10px;
       }
 
       .matchmaker-stack .card-3 {
-        --hover-x: 25px;
+        --hover-x: 30px;
         --hover-y: 5px;
       }
 
       .matchmaker-stack .card-4 {
-        --hover-x: 80px;
+        --hover-x: 100px;
         --hover-y: -5px;
       }
     }
@@ -752,22 +752,22 @@
       }
 
       .polaroid-scene {
-        height: 320px;
+        height: 360px;
       }
 
       .polaroid-card {
-        width: 110px;
-        padding: 6px 6px 12px 6px;
+        width: 135px;
+        padding: 8px 8px 14px 8px;
       }
 
       .polaroid-caption {
-        font-size: 9px;
+        font-size: 10px;
         margin-top: 8px;
       }
 
       /* Tighter squeeze on tiny screens */
       .visible .fingerprint-stack .card-1 {
-        transform: translate(-45px, 0) rotate(-6deg);
+        transform: translate(-60px, 0) rotate(-6deg);
       }
 
       .visible .fingerprint-stack .card-2 {
@@ -775,27 +775,27 @@
       }
 
       .visible .fingerprint-stack .card-3 {
-        transform: translate(45px, -5px) rotate(5deg);
+        transform: translate(60px, -5px) rotate(5deg);
       }
 
       .visible .matchmaker-stack .card-1 {
-        transform: translate(-60px, 8px) rotate(-8deg);
+        transform: translate(-80px, 8px) rotate(-8deg);
       }
 
       .visible .matchmaker-stack .card-2 {
-        transform: translate(-20px, -8px) rotate(-2deg);
+        transform: translate(-25px, -8px) rotate(-2deg);
       }
 
       .visible .matchmaker-stack .card-3 {
-        transform: translate(20px, 4px) rotate(3deg);
+        transform: translate(25px, 4px) rotate(3deg);
       }
 
       .visible .matchmaker-stack .card-4 {
-        transform: translate(60px, -4px) rotate(6deg);
+        transform: translate(80px, -4px) rotate(6deg);
       }
 
       .fingerprint-stack .card-1 {
-        --hover-x: -45px;
+        --hover-x: -60px;
         --hover-y: 0;
       }
 
@@ -805,28 +805,47 @@
       }
 
       .fingerprint-stack .card-3 {
-        --hover-x: 45px;
+        --hover-x: 60px;
         --hover-y: -5px;
       }
 
       .matchmaker-stack .card-1 {
-        --hover-x: -60px;
+        --hover-x: -80px;
         --hover-y: 8px;
       }
 
       .matchmaker-stack .card-2 {
-        --hover-x: -20px;
+        --hover-x: -25px;
         --hover-y: -8px;
       }
 
       .matchmaker-stack .card-3 {
-        --hover-x: 20px;
+        --hover-x: 25px;
         --hover-y: 4px;
       }
 
       .matchmaker-stack .card-4 {
-        --hover-x: 60px;
+        --hover-x: 80px;
         --hover-y: -4px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      header {
+        flex-direction: column;
+        gap: 20px;
+        padding-bottom: 24px;
+      }
+
+      .nav-links {
+        gap: 16px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .nav-links a {
+        font-size: 12px;
+        white-space: nowrap;
       }
     }
   </style>
