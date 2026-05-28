@@ -133,7 +133,7 @@
 
     .logo-sparkle {
       font-size: 12px;
-      color: var(--fg);
+      color: var(--accent-purple);
       opacity: 0.9;
     }
 
@@ -211,6 +211,18 @@
       color: var(--fg-muted);
       margin-bottom: 40px;
       max-width: 500px;
+    }
+
+    .subtitle a {
+      color: var(--accent-cyan);
+      text-decoration: none;
+      border-bottom: 1px dashed rgba(0, 229, 255, 0.3);
+      transition: border-bottom-color 0.2s, color 0.2s;
+    }
+
+    .subtitle a:hover {
+      color: var(--fg);
+      border-bottom-color: var(--accent-cyan);
     }
 
     /* Call to Action Buttons */
@@ -438,12 +450,17 @@
     <!-- HERO SECTION -->
     <main class="hero">
       <div class="hero-content">
-        <a href="https://event.hackthemountain.ca/info" target="_blank" rel="noopener" class="badge" id="badge-hack">
-          Built for Hack the Mountain
-        </a>
+        <!-- <a href="https://event.hackthemountain.ca/info" target="_blank" rel="noopener" class="badge" id="badge-hack">
+          <b>Built for Hack the Mountain</b>
+        </a> -->
         <h1 id="hero-title">Audio intelligence layer.</h1>
         <p class="subtitle" id="hero-subtitle">
           Identify songs, extract quantitative acoustic metadata, and match with others sharing your sonic profile.
+        </p>
+
+        <p class="subtitle" id="hero-subtitle">
+          Built @ <b><a href="https://hackthemountain.ca/" target="_blank" rel="noopener"
+              id="footer-link-htm">hackthemountain.ca</a></b> under Sonic Arts + CADUM Mobile category.
         </p>
 
         <div class="cta-group">
@@ -516,8 +533,8 @@
     <!-- FOOTER -->
     <footer>
       <div class="footer-left">
-        <span class="footer-meta">arts + cadum mobile 2026</span>
-        <span class="footer-meta" style="color: var(--fg-muted);">not a music player</span>
+        <!-- <span class="footer-meta">arts + cadum mobile 2026</span> -->
+        <span class="footer-meta" style="color: var(--fg-muted);">© 2026 Steven Chhay</span>
       </div>
       <div class="footer-links">
         <a href="https://hackthemountain.ca/" target="_blank" rel="noopener" id="footer-link-htm">hackthemountain.ca</a>
