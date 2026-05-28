@@ -413,8 +413,109 @@
       font-size: 11px;
       font-weight: 600;
       letter-spacing: 0.1em;
-      text-transform: uppercase;
+      /* text-transform: uppercase; */
       color: var(--fg-dim);
+    }
+
+    /* App Switcher Showcase */
+    .showcase-section {
+      padding: 80px 0;
+      border-top: 1px solid var(--glass-border);
+      text-align: center;
+    }
+
+    .showcase-title {
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 48px;
+    }
+
+    .app-switcher-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 520px;
+      perspective: 1500px;
+      position: relative;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .app-card {
+      width: 230px;
+      height: 480px;
+      border-radius: 28px;
+      background-color: var(--surface);
+      border: 1px solid var(--glass-border);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.7);
+      position: absolute;
+      overflow: hidden;
+      transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1), z-index 0s, border-color 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .app-screenshot {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-label {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 100%);
+      padding: 20px 16px 12px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--fg);
+      text-align: center;
+      pointer-events: none;
+      transform: translateY(100%);
+      transition: transform 0.3s ease;
+    }
+
+    .app-card:hover .card-label {
+      transform: translateY(0);
+    }
+
+    /* Stacked positions like iOS App Switcher */
+    .card-1 { transform: rotateY(-24deg) rotateX(10deg) translateZ(0px) translateX(-200px) scale(0.9); z-index: 1; }
+    .card-2 { transform: rotateY(-24deg) rotateX(10deg) translateZ(50px) translateX(-100px) scale(0.95); z-index: 2; }
+    .card-3 { transform: rotateY(-24deg) rotateX(10deg) translateZ(100px) translateX(0px); z-index: 3; }
+    .card-4 { transform: rotateY(-24deg) rotateX(10deg) translateZ(150px) translateX(100px) scale(1.05); z-index: 4; }
+    .card-5 { transform: rotateY(-24deg) rotateX(10deg) translateZ(200px) translateX(200px) scale(1.1); z-index: 5; }
+
+    /* Interactive Hover effect to elevate card */
+    .app-card:hover {
+      transform: rotateY(0deg) rotateX(0deg) translateZ(300px) translateY(-30px) scale(1.15);
+      z-index: 100;
+      border-color: var(--accent-cyan);
+      box-shadow: 0 30px 60px rgba(0, 229, 255, 0.25);
+    }
+
+    @media (max-width: 900px) {
+      .app-switcher-container {
+        height: auto;
+        flex-wrap: wrap;
+        gap: 20px;
+        perspective: none;
+      }
+      .app-card {
+        position: static;
+        width: 160px;
+        height: 330px;
+        border-radius: 16px;
+      }
+      .card-1, .card-2, .card-3, .card-4, .card-5 {
+        transform: none !important;
+      }
+      .app-card:hover {
+        transform: scale(1.05) translateY(-10px) !important;
+      }
     }
   </style>
 </head>
@@ -466,11 +567,11 @@
 
         <div class="cta-group">
           <a href="https://vibe-fm.expo.app" class="btn btn-primary" id="btn-web-app">
-            Launch Web App
+            Demo Web App
           </a>
           <a href="https://expo.dev/projects/634077a0-fb80-46c8-ba0a-070dc0e4fb5e/updates/6789943f-66ed-4f46-8afc-6e4726af4a69"
             class="btn btn-secondary" id="btn-expo-go">
-            Open in Expo Go
+            Demo in Expo Go
           </a>
         </div>
       </div>
@@ -485,7 +586,7 @@
         </div>
         <div class="preview-title" id="qr-title">Scan on Mobile</div>
         <p class="preview-desc" id="qr-desc">
-          Scan this QR code with your phone camera to load the mobile application directly in Expo Go.
+          Scan this QR code with your phone camera to try the mobile application directly in Expo Go.
         </p>
         <a href="exp://u.expo.dev/634077a0-fb80-46c8-ba0a-070dc0e4fb5e?runtime-version=exposdk%3A54.0.0&channel-name=production"
           class="preview-link" id="link-direct-mobile">
@@ -493,6 +594,33 @@
         </a>
       </div>
     </main>
+
+    <!-- EXPERIENCE SHOWCASE (iOS App Switcher Stack style) -->
+    <section class="showcase-section" aria-label="App Screenshots Showcase">
+      <h2 class="showcase-title">Inside vibe.fm</h2>
+      <div class="app-switcher-container">
+        <div class="app-card card-1" id="switcher-card-1">
+          <img src="assets/media/screen-capture.png" alt="Capture screen showing tap to scan with circular progress" class="app-screenshot" />
+          <div class="card-label">Audio Scanner</div>
+        </div>
+        <div class="app-card card-2" id="switcher-card-2">
+          <img src="assets/media/screen-result.png" alt="Result sheet for Billie Jean showing energy, valence, and description" class="app-screenshot" />
+          <div class="card-label">Sonic Fingerprint</div>
+        </div>
+        <div class="app-card card-3" id="switcher-card-3">
+          <img src="assets/media/screen-trending.png" alt="Trending dashboard showing localized song rankings in Montreal" class="app-screenshot" />
+          <div class="card-label">Trending Dashboard</div>
+        </div>
+        <div class="app-card card-4" id="switcher-card-4">
+          <img src="assets/media/screen-match-drake.png" alt="Drake compatibility matching card showing shared artists" class="app-screenshot" />
+          <div class="card-label">Acoustic Matchmaking</div>
+        </div>
+        <div class="app-card card-5" id="switcher-card-5">
+          <img src="assets/media/screen-match-kanye.png" alt="Kanye compatibility match showing shared artists and genres" class="app-screenshot" />
+          <div class="card-label">Soulmates Deck</div>
+        </div>
+      </div>
+    </section>
 
     <!-- CORE FEATURES -->
     <section class="features-grid" aria-label="Key Features">
